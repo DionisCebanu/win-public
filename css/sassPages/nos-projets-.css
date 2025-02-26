@@ -1,0 +1,78 @@
+.admirer-travail {
+  display: flex;
+  justify-content: space-between;
+  height: 535px;
+  margin-left: 100px;
+  background: linear-gradient(270deg, #F1F1F1 0%, #FFF 100%);
+  padding-top: 181px;
+}
+.admirer-travail img {
+  width: 664.28px;
+  height: 265.836px;
+}
+.admirer-travail p {
+  font-size: 55px;
+  font-weight: 700;
+}
+.admirer-travail p span {
+  color: var(--primary);
+}
+
+.nos-etudes {
+  margin-top: 95px;
+}
+.nos-etudes .telephone-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nos-etudes .nos-etudes-img {
+  margin-top: 70px;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  column-gap: 110px;
+}
+.nos-etudes p {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+}
+.nos-etudes p span {
+  color: var(--primary);
+}
+
+.nos-magnifiques {
+  margin-top: 95px;
+  margin-bottom: 200px;
+}
+.nos-magnifiques .nos-magnifiques-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 70px;
+  padding-top: 10px;
+}
+.nos-magnifiques .nos-magnifiques-img .img-projet {
+  display: grid;
+  grid-template-columns: repeat(3, 199.763px);
+  column-gap: 150px;
+  row-gap: 90px;
+}
+.nos-magnifiques .nos-magnifiques-img .img-projet p {
+  font-size: 24px;
+  font-weight: 600px;
+  font-style: normal;
+  line-height: normal;
+  margin: 0;
+}
+.nos-magnifiques p {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+}
+.nos-magnifiques p span {
+  color: var(--primary);
+}
+
+/*# sourceMappingURL=nos-projets-.css.map */

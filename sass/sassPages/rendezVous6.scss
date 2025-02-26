@@ -1,0 +1,39 @@
+.rdv-barre {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    text-align: center;
+    margin-top: 40px;
+  }
+  p {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 39px;
+    #btnAcc {
+      cursor: pointer;
+      background-color: var(--primary);
+      border-radius: 8px;
+      padding: 8px 16px;
+      width: 180px;
+      height: 46px;
+      color: white;
+      border: none;
+      margin-bottom: 25px;
+    }
+  }
+}

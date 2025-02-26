@@ -1,0 +1,242 @@
+#bgSelector {
+  background-color: var(--primary);
+}
+
+.rdv-barre {
+  align-items: center;
+}
+.rdv-barre .navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 20px;
+}
+.rdv-barre .bar-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+.rdv-barre .bar-progress .cercle {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bColor);
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.rdv-barre .bar-progress .cercle img {
+  width: 20px;
+  height: 20px;
+}
+.rdv-barre .bar-progress .line {
+  width: 55px;
+  height: 3px;
+  background-color: var(--bColor);
+  border-radius: 100px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content h3 {
+  width: 207px;
+  height: 37px;
+  font-family: "Visby CF";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 37px;
+  text-align: center;
+  color: black;
+}
+.content p {
+  width: 256px;
+  height: 31px;
+  font-family: "Visby CF";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 31px;
+  text-align: center;
+  color: black;
+}
+.content .question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content .question label {
+  width: 282px;
+  height: 37px;
+  font-family: "Visby CF";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 37px;
+  text-align: center;
+}
+.content .question textarea {
+  width: 400px;
+  height: 200px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  border: none;
+  resize: none;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 39px;
+}
+.btn #btn1 {
+  cursor: pointer;
+  background-color: white;
+  border-radius: 8px;
+  margin-right: 40px;
+  padding: 8px 16px;
+  width: 180px;
+  height: 46px;
+  border: 1px solid #383330;
+  margin-bottom: 25px;
+}
+.btn #btn2 {
+  cursor: pointer;
+  background-color: var(--primary);
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 180px;
+  height: 46px;
+  color: white;
+  border: none;
+  margin-bottom: 25px;
+}
+.btn #btn2:hover {
+  background-color: var(--primary);
+}
+
+#retour {
+  background-color: transparent;
+  border: none;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.popup-overlay .popup-content {
+  width: 321px;
+  height: 285px;
+  padding: 45px;
+  background-color: white;
+  border-radius: 10px;
+}
+.popup-overlay .popup-content p {
+  font-size: 20px;
+  font-weight: 400;
+}
+.popup-overlay .popup-content .selBtn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.popup-overlay .popup-content .selBtn button {
+  padding: 10px 45px;
+  color: var(--txt-gray);
+  background-color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid var(--txt-gray);
+  border-radius: 8px;
+}
+.popup-overlay .popup-content .selBtn button:hover {
+  padding: 10px 45px;
+  color: white;
+  background-color: var(--primary);
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+}
+
+.langue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.langue img {
+  height: 18px;
+  width: 18px;
+}
+.langue #en {
+  padding-left: 2px;
+  padding-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .rdv-barre .bar-progress .line {
+    width: 25px;
+  }
+  .rdv-barre .content {
+    font-size: 25px;
+  }
+  .rdv-barre .content textarea {
+    width: 300px;
+    height: 200px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    border: none;
+    overflow-x: auto;
+  }
+  .btn {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .btn #btn1 {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .btn #btn2 {
+    margin: 0;
+    background-color: var(--primary);
+  }
+  .langue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .langue img {
+    height: 29px;
+    width: 29px;
+  }
+  .langue #en {
+    padding-left: 2px;
+    padding-top: 2px;
+    font-weight: 700;
+  }
+}
+
+/*# sourceMappingURL=rendezVous5.css.map */

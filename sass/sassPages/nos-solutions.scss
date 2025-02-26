@@ -1,0 +1,646 @@
+@use "../index.scss";
+
+// Desktop
+* {
+  @media (min-width: 769px) {
+    .processus {
+      // padding-left: 0;
+      width: 100%;
+      height: 621px;
+      margin: auto;
+
+      .processustext {
+        text-align: center;
+        font-size: 45px;
+        margin-top: 80px;
+
+        p {
+          margin: 0;
+          font-weight: 700;
+          line-height: 130%;
+          color: var(--text-black);
+
+          span {
+            color: var(--primary);
+          }
+        }
+      }
+
+      .processusetude {
+        width: 1465px;
+        margin: auto;
+        padding-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 1%;
+
+        p {
+          display: none;
+        }
+
+        .phase {
+          flex-basis: 171.5px;
+          height: 400px;
+          background-color: #fc6136;
+          border-radius: 5px;
+          text-align: center;
+          position: relative;
+
+          .process-number {
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            padding-top: 10px;
+            display: inline-block;
+            color: #ffffff;
+            font-weight: bolder;
+            font-size: x-large;
+            border-radius: 50%;
+            transform: scale(1.5);
+            left: calc(50% - 45px / 2 - 0.5px);
+            top: calc(50% - 45px / 2 + 0.5px);
+          }
+
+          .process-number:hover {
+            background-color: #e9e9e9;
+            color: var(--primary);
+            transition-duration: 0.6s;
+            cursor: pointer;
+          }
+        }
+
+        .phase.etude.active {
+          flex-grow: 1;
+          background-image: linear-gradient(
+              184.98deg,
+              rgba(255, 255, 255, 0) 59%,
+              rgba(255, 255, 255, 0.7) 30.01%,
+              rgba(255, 255, 255, 0.9) 78.19%
+            ),
+            url("../../assets/images/solution/processus/1.png");
+          transition-duration: 0.6s;
+
+          .process-number {
+            display: none;
+          }
+
+          p {
+            display: block;
+            position: absolute;
+            color: hsl(0, 0%, 0%);
+          }
+
+          #titre {
+            padding-left: 10px;
+            font-size: 20px;
+            font-weight: 500;
+            bottom: 45px;
+          }
+
+          #resume {
+            text-align: justify;
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 15px;
+            top: 325px;
+            left: 20px;
+            opacity: 0;
+            animation: applyStyles 0.3s forwards;
+            animation-delay: 0.2s;
+          }
+
+          @keyframes applyStyles {
+            to {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+    .technologie {
+      margin-top: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        font-size: 45px;
+        font-weight: 700;
+        text-align: center;
+
+        span {
+          color: var(--primary);
+        }
+      }
+
+      .technologie-img {
+        margin-top: 70px;
+        padding-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 250px);
+        gap: 30px;
+      }
+
+      .img-container {
+        position: relative;
+        margin: 10px;
+        transition: transform 0.5s ease;
+      }
+
+      .img-container img {
+        display: block;
+        width: 200px;
+        height: auto;
+      }
+
+      .img-container .hover-image {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+      }
+
+      .img-container:hover .hover-image {
+        display: block;
+        transform: scale(1.02);
+        background-color: #e9e9e9;
+        border-radius: 10px;
+        border: solid 1px #e9e9e9;
+      }
+    }
+
+    .application {
+      margin-top: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        font-size: 45px;
+        font-weight: 700;
+        text-align: center;
+
+        span {
+          color: var(--primary);
+        }
+      }
+
+      .application-img {
+        margin-top: 70px;
+        padding-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 250px);
+        gap: 30px;
+      }
+
+      .img-container {
+        position: relative;
+        margin: 10px;
+        transition: transform 0.5s ease;
+      }
+
+      .img-container img {
+        display: block;
+        width: 200px;
+        height: auto;
+      }
+
+      .img-container .hover-image {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+      }
+
+      .img-container:hover .hover-image {
+        display: block;
+        transform: scale(1.02);
+        background-color: #e9e9e9;
+        border-radius: 10px;
+        border: solid 1px #e9e9e9;
+      }
+    }
+
+    .logiciel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 200px;
+      margin-bottom: 200px;
+
+      p {
+        font-size: 45px;
+        font-weight: 700;
+        text-align: center;
+
+        span {
+          color: var(--primary);
+        }
+      }
+
+      .logiciel-img {
+        margin-top: 70px;
+        padding-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        gap: 30px;
+      }
+
+      .img-container {
+        position: relative;
+        margin: 10px;
+        transition: transform 0.5s ease;
+      }
+
+      .img-container img {
+        display: block;
+        width: 200px;
+        height: auto;
+      }
+
+      .img-container .hover-image {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+      }
+
+      .img-container:hover .hover-image {
+        display: block;
+        transform: scale(1.02);
+        background-color: #e9e9e9;
+        border-radius: 10px;
+        border: solid 1px #e9e9e9;
+      }
+    }
+  }
+
+  /* Style pour le modal */
+  .modal {
+    display: none; /* Masquer le modal par défaut */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  /* Style pour le contenu du modal */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px; /* Pour limiter la largeur du modal */
+  }
+
+  /* Style pour le bouton de fermeture */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Style pour le titre du modal */
+  #modal-title {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  /* Style pour le texte du modal */
+  #modal-text {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+}
+
+/***************************************************  Mobile  **************************************************/
+* {
+  @media (max-width: 768px) {
+    .processus {
+      width: 100%;
+      // height: 621px;
+      margin: auto;
+
+      .processustext {
+        text-align: center;
+        font-size: 24px;
+        margin-top: 80px;
+
+        p {
+          margin: 0;
+          font-weight: 700;
+          line-height: 130%;
+          color: var(--text-black);
+
+          span {
+            color: var(--primary);
+          }
+        }
+      }
+
+      .processusetude {
+        height: 760px;
+        margin: auto;
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 1%;
+
+        p {
+          display: none;
+        }
+
+        .phase {
+          flex-basis: 80px;
+          width: 100%;
+          background-color: #fc6136;
+          border-radius: 5px;
+          text-align: center;
+          position: relative;
+          margin: auto;
+
+          .process-number {
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            padding-top: 10px;
+            display: inline-block;
+            color: #ffffff;
+            font-weight: bolder;
+            font-size: x-large;
+            border-radius: 50%;
+            transform: scale(1.5);
+            left: calc(50% - 45px / 2 - 0.5px);
+            top: calc(50% - 45px / 2 + 0.5px);
+          }
+
+          .process-number:hover {
+            background-color: #e9e9e9;
+            color: var(--primary);
+            transition-duration: 0.6s;
+            cursor: pointer;
+          }
+        }
+
+        .phase.etude.active {
+          flex-grow: 1;
+          background-image: linear-gradient(
+              184.98deg,
+              rgba(255, 255, 255, 0) 59%,
+              rgba(255, 255, 255, 0.7) 30.01%,
+              rgba(255, 255, 255, 0.9) 78.19%
+            ),
+            url("../../assets/images/solution/processus/1.png");
+          background-size: cover;
+          background-position: center;
+          transition-duration: 0.6s;
+
+          .process-number {
+            display: none;
+          }
+
+          p {
+            display: block;
+            position: absolute;
+            color: hsl(0, 0%, 0%);
+          }
+
+          #titre {
+            padding-left: 10px;
+            font-size: 20px;
+            font-weight: 500;
+            bottom: 30px;
+            line-height: 37px;
+          }
+
+          #resume {
+            text-align: justify;
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 15px;
+            top: 285px;
+            left: 20px;
+            gap: 10px;
+            line-height: 24px;
+            opacity: 0;
+            animation: applyStyles 0.3s forwards;
+            animation-delay: 0.2s;
+          }
+
+          @keyframes applyStyles {
+            to {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+    .technologie {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 390px;
+      margin-top: 30%;
+
+      p {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        width: 259px;
+      }
+
+      .technologie-img {
+        position: relative;
+        margin: 10px 0;
+
+        .img-container {
+          display: none;
+
+          img {
+            vertical-align: middle;
+          }
+        }
+      }
+
+      /********************************* dot animation **********************************/
+
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 4px;
+        border-radius: 20%;
+        display: inline-block;
+        transition: background-color 0.8s ease;
+      }
+
+      .dot.active {
+        background-color: #fc6136;
+        transform: scale(1.5);
+      }
+    }
+
+    .application {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 390px;
+      margin-top: 30%;
+
+      p {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        width: 259px;
+      }
+
+      .application-img {
+        position: relative;
+        margin: 10px 0;
+
+        .img-container {
+          display: none;
+
+          img {
+            vertical-align: middle;
+          }
+        }
+      }
+
+      /********************************* dot animation **********************************/
+
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 4px;
+        border-radius: 20%;
+        display: inline-block;
+        transition: background-color 0.8s ease;
+      }
+
+      .dot.active {
+        background-color: #fc6136;
+        transform: scale(1.5);
+      }
+    }
+
+    .logiciel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 390px;
+      margin-top: 30%;
+
+      p {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .logiciel-img {
+        position: relative;
+        margin: 10px 0;
+
+        .img-container {
+          display: none;
+
+          img {
+            vertical-align: middle;
+          }
+        }
+      }
+
+      /********************************* dot animation **********************************/
+
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 4px;
+        border-radius: 20%;
+        display: inline-block;
+        transition: background-color 0.8s ease;
+      }
+
+      .dot.active {
+        background-color: #fc6136;
+        transform: scale(1.5);
+      }
+    }
+
+    .img-container {
+      position: relative;
+      //margin: 10px;
+      transition: transform 0.5s ease;
+      text-align: center;
+    }
+
+    .img-container {
+      text-align: center;
+
+      img {
+        display: block;
+        width: 125px;
+      }
+    }
+
+    .img-container .hover-image {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+    }
+
+    .img-container:hover .hover-image {
+      display: block;
+      transform: scale(1.02);
+      background-color: #e9e9e9;
+      border-radius: 10px;
+      border: solid 1px #e9e9e9;
+    }
+
+    /********************************************************** Modal *************************************************************/
+
+    .modal-content {
+      margin: 30% auto;
+      width: 90%;
+    }
+    #modal-title {
+      font-size: 20px;
+    }
+    #modal-text {
+      font-size: 14px;
+    }
+  }
+}

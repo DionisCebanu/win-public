@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/fonts/cssFont.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../assets/icons/favicon.ico"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="/css/sassPages/singleProjet/single-projetct.css"
+    />
+    <title>Single Project</title>
+  </head>
+
+  <body id="pageContainer" data-page-id="">
+    <div id="header-container"></div>
+
+    <main>
+      <section class="experience-client">
+        <div class="image-fond"></div>
+        <div class="container wrapper">
+          <div class="text-container fond">
+            <h1 class="titre1"></h1>
+            <h2 class="titre3"></h3>
+            <p class="text"></p>
+          </div>
+          <img
+            src=""
+            alt=""
+            class="img-container"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section class="production">
+        <div class="image-fond"></div>
+        <div class="container wrapper">
+          <div class="text-container">
+            <h2 class="titre2"></h2>
+            <p class="text"></p>
+          </div>
+          <img
+            src=""
+            alt=""
+            class="img-container"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section class="processus-paiment">
+        <div class="image-fond"></div>
+        <div class="container wrapper">
+          <div class="text-container">
+            <h2 class="titre2"></span></h2>
+            <p class="text"></p>
+          </div>
+          <img
+            src=""
+            alt=""
+            class="img-container"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section class="mission">
+        <div class="container wrapper">
+          <div class="text-container">
+            <h2 class="titre2"></h2>
+            <p class="text"></p>
+          </div>
+          <img
+            src=""
+            alt=""
+            class="img-container"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section class="design">
+        <div class="image-fond"></div>
+        <div class="container wrapper">
+          <div class="text-container">
+            <h2 class="titre2"></h2>
+            <p class="text"></p>
+          </div>
+
+          <img
+            src=""
+            alt=""
+            class="img-container"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section class="iconographie-nav">
+        <div class="container wrapper">
+          <div class="text-container">
+            <h2 class="titre2"></h2>
+            <p class="text"></p>
+          </div>
+          <img
+            src=""
+            alt=""
+            class="img-container"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <div class="button-item">
+        <button class="preview">PROJET PRÉCÉDENT</button>
+        <button class="next">PROJET SUIVANT</button>
+      </div>
+    </main>
+
+    <div id="footer-container"></div>
+  </body>
+</html>
+
+    
+    <script src="/js/stickyHeader.js"></script>
+    <script src="/js/annimerLogo.js"></script>
+    <script src="/js/traduction/langueSinglePage.js"></script>
+    <script src="/js/traduction/dictionnaire.js"></script>
+    <script src="/js/responsiveHeader.js"></script>
+    <script src="/js/inclureHeaderFooter/inclureHeaderFooter.js"></script>
+    <!-- <script src="/js/traduction/pages/singleProjets/timHortons.js"></script> -->
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+  let currentIndex = parseInt((params.get('id')), 10);
+  console.log(params.get('id'));
+  let data = [];
+  let title; 
+  // const url = [];
+  const gradiant = "linear-gradient(90deg, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.5) 100%)"; 
+  const backgroundPosition = "center"; 
+  const backgroundSize = "cover"; 
+  const backgroundAttachment = "fixed"; 
+
+  const elementsEx = {
+      titre1: document.querySelector('.experience-client .titre1'),
+      titre3: document.querySelector('.experience-client .titre3'),
+      text: document.querySelector('.experience-client .text'),
+      img: document.querySelector('.experience-client .img-container')
+    }
+    const elementsProd = {
+      titre2: document.querySelector('.production .titre2'),
+      text: document.querySelector('.production .text'),
+      img: document.querySelector('.production .img-container')
+    }
+    const elementsProc = {
+      titre2: document.querySelector('.processus-paiment .titre2'),
+      text: document.querySelector('.processus-paiment .text'),
+      img: document.querySelector('.processus-paiment .img-container')
+    }
+
+  const elements = {
+    mission: document.querySelector('.mission'),
+    design: document.querySelector('.design'),
+    iconographie: document.querySelector('.iconographie-nav')
+  }
+
+  const elementsMiss = {
+    titre2:  elements.mission.querySelector('.titre2'),
+    text: elements.mission.querySelector('.text'),
+    img: elements.mission.querySelector('.img-container')
+  }
+  const elementsDis = {
+    titre2: elements.design.querySelector('.titre2'),
+    text: elements.design.querySelector('.text'),
+    img: elements.design.querySelector('.img-container')
+  }
+  const elementsIco = {
+    titre2:  elements.iconographie.querySelector('.titre2'),
+    text: elements.iconographie.querySelector('.text'),
+    img: elements.iconographie.querySelector('.img-container')
+  }
+
+  const gradiantProto = "linear-gradient(90deg, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.5) 100%)"; 
+  const backgroundSittings = {
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    backgroundAttachment: "fixed"
+  }
+
+  const btnNext = document.querySelector('.next');
+  const btnPreview = document.querySelector('.preview');
+  
+
+  //  Fonction pour récupérer les données si elle ne sont pas chargées
+  async function loadData() {
+    if (data.length === 0) { 
+      const response = await fetch('../public/data.json');
+      data = await response.json();
+    }
+  }
+
+  let maClass = null;
+  const pageContainer = document.getElementById('pageContainer');
+  let storedLang = localStorage.getItem("language") || "fr";
+  const delay = 10;
+
+  //  Mettre à jour le contenu de la page
+
+  function updateContent() {
+    const classT = data[currentIndex].classT;
+    maClass = classT;
+    const prototype = data[currentIndex].prototype;
+    const newPage = data[currentIndex].title;
+    const lan1 = "en";
+    
+    pageContainer.setAttribute('data-page-id', newPage);
+    
+    console.log("la propriéte est : "+pageContainer.getAttribute('data-page-id'));
+
+    elementsEx.titre3.classList.add(`${classT}1`);
+    elementsEx.text.classList.add(`${classT}2`);
+    
+    elementsProd.titre2.classList.add(`${classT}3`);
+    elementsProd.text.classList.add(`${classT}4`);
+
+    elementsProc.titre2.classList.add(`${classT}5`);
+    elementsProc.text.classList.add(`${classT}6`);
+
+    elementsEx.titre1.innerText = data[currentIndex].experience.titre1;
+    elementsEx.titre3.innerText = data[currentIndex].experience.titre3;
+    elementsEx.text.innerText = data[currentIndex].experience.text;
+    elementsEx.img.src = data[currentIndex].experience.img;
+
+    elementsProd.titre2.innerHTML = data[currentIndex].production.titre2;
+    elementsProd.text.innerText = data[currentIndex].production.text;
+    elementsProd.img.src = data[currentIndex].production.img;
+
+    elementsProc.titre2.innerHTML = data[currentIndex].processus.titre2;
+    elementsProc.text.innerHTML = data[currentIndex].processus.text;
+    elementsProc.img.src = data[currentIndex].processus.img;
+
+    Object.values(elements).forEach(element => {
+      element.style.display = prototype ? 'block' : 'none';
+    });
+
+    const imageFond = document.querySelectorAll('.image-fond');
+
+    //  Vérifier si c'est une page prototype
+
+    if(prototype) {
+      elementsMiss.titre2.classList.add(`${classT}7`);
+      elementsMiss.text.classList.add(`${classT}8`);
+
+      elementsDis.titre2.classList.add(`${classT}9`);
+      elementsDis.text.classList.add(`${classT}10`);
+
+      elementsIco.titre2.classList.add(`${classT}11`);
+      elementsIco.text.classList.add(`${classT}12`);
+
+      elementsMiss.titre2.innerHTML = data[currentIndex].mission.titre2;
+      elementsMiss.text.innerText = data[currentIndex].mission.text;
+      elementsMiss.img.src = data[currentIndex].mission.img;
+
+      elementsDis.titre2.innerHTML = data[currentIndex].design.titre2;
+      elementsDis.text.innerHTML = data[currentIndex].design.text;
+      elementsDis.img.src = data[currentIndex].design.img;
+
+      elementsIco.titre2.innerHTML = data[currentIndex].iconographie.titre2;
+      elementsIco.text.innerHTML = data[currentIndex].iconographie.text;
+      elementsIco.img.src = data[currentIndex].iconographie.img;
+
+      imageFond.forEach(element => {
+        element.style.backgroundImage = `${gradiantProto}, url('${data[currentIndex]["img-wrap"]}')`;
+        Object.assign(element.style, backgroundSittings);
+      });
+
+    } else {
+        imageFond.forEach(element => {
+          element.style.backgroundImage = "linear-gradient(90deg, rgb(240, 240, 240) 40%, #FDFDFD 100%)";
+        });
+    }
+  }
+
+  document.querySelector('.button-item').addEventListener('click', (event) => {
+    elementsEx.titre3.classList.remove(`${maClass}1`);
+    elementsEx.text.classList.remove(`${maClass}2`);
+    elementsProd.titre2.classList.remove(`${maClass}3`);
+    elementsProd.text.classList.remove(`${maClass}4`);
+    elementsProc.titre2.classList.remove(`${maClass}5`);
+    elementsProc.text.classList.remove(`${maClass}6`);
+    elementsMiss.titre2.classList.remove(`${maClass}7`);
+    elementsMiss.text.classList.remove(`${maClass}8`);
+    elementsDis.titre2.classList.remove(`${maClass}9`);
+    elementsDis.text.classList.remove(`${maClass}10`);
+    elementsIco.titre2.classList.remove(`${maClass}11`);
+    elementsIco.text.classList.remove(`${maClass}12`);
+    
+  if (event.target.classList.contains('next')) {
+    currentIndex = currentIndex < (data.length - 1) ? currentIndex + 1 : 0;
+    window.location.href = `/single-project?id=${currentIndex}`;
+  } else if (event.target.classList.contains('preview')) {
+    currentIndex = currentIndex > 0 ? currentIndex - 1 : data.length - 1;
+    window.location.href = `/single-project?id=${currentIndex}`;
+  }
+  window.scrollTo(0, 0);
+});
+
+function loadScript(url, callback) {
+  const script = document.createElement('script');
+  script.src = url;
+  script.onload = callback;
+  document.head.appendChild(script);
+}
+
+  //Charger les données et mettre à jour le contenu initial
+  document.addEventListener('DOMContentLoaded', async () => {
+    await loadData();
+    updateContent();
+
+  });
+
+</script>

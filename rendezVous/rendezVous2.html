@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rendez-Vous</title>
+    <link rel="stylesheet" href="/fonts/cssFont.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/sassPages/rendez-vous2.css" />
+  </head>
+  <body data-page-id="rendezVous2">
+    <section class="rdv-barre">
+      <div class="navigation">
+        <button id="retour">
+          <img src="/assets/images/Rendez-vous/retour.svg" alt="" />
+        </button>
+        <div class="langue">
+          <a href="" id="vector"
+            ><img src="/assets/images/header/Vector.png" alt=""
+          /></a>
+          <a id="en" href="">En</a>
+        </div>
+      </div>
+      <div class="bar-progress">
+        <div class="cercle" id="bgSelector">
+          <img src="/assets/images/Rendez-vous/Check.svg" />
+        </div>
+        <div class="line" id="bgSelector"></div>
+        <div class="cercle" id="bgSelector">2</div>
+        <div class="line"></div>
+        <div class="cercle">3</div>
+        <div class="line"></div>
+        <div class="cercle">4</div>
+        <div class="line"></div>
+        <div class="cercle">5</div>
+      </div>
+      <div class="rdv2-2">
+        <div class="formulair">
+          <form id="myForm" action="#">
+            <div>
+              <label class="rv1" for="nomRespo">Nom du responsable</label>
+              <br />
+              <input id="nomRespo" type="text" placeholder="Dupont" />
+              <p class="error" id="errorNomRespo"></p>
+            </div>
+            <br />
+            <div>
+              <label class="rv2" for="courriel">Courriel</label><br />
+              <input
+                id="courriel"
+                type="text"
+                placeholder="exemple@domaine.com"
+              />
+              <p class="error" id="errorCourriel"></p>
+            </div>
+            <br />
+            <div>
+              <label class="rv3" for="numTel">Numéro de Téléphone</label><br />
+              <input id="numTel" type="text" placeholder="(514) 546-1702" />
+              <p class="error" id="errorNumTel"></p>
+            </div>
+            <br />
+            <div>
+              <label class="rv4" for="ideeApp"
+                >Nom de l'idée d'application (optionnel)</label
+              ><br />
+              <input
+                id="ideeApp"
+                type="text"
+                placeholder="Nom de votre idée.."
+              />
+              <p class="error" id="errorIdeeApp"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="btn">
+        <a href="/rendez-vous"><button class="rv5" id="btn1">Retour</button></a>
+        <button class="rv6" id="btn2">Suivant</button>
+      </div>
+    </section>
+    <div class="popup-overlay" id="popup">
+      <div class="popup-content">
+        <p class="rv7">Votre progrès sera perdu. Êtes-vous certain?</p>
+        <div class="selBtn">
+          <button class="rv8" id="oui">Oui</button>
+          <button class="rv9" id="non">Non</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/popup.js"></script>
+    <script src="/js/rendez-vous2.js"></script>
+    <script src="/js/traduction/dictionnaire.js"></script>
+    <script src="/js/traduction/langue.js"></script>
+
+    <script>
+      document
+        .getElementById("numTel")
+        .addEventListener("input", function (event) {
+          let input = event.target.value;
+
+          // Supprimer tous les caractères non numériques
+          input = input.replace(/\D/g, "");
+
+          // Ajouter la parenthèse gauche pour les trois premiers chiffres
+          if (input.length > 3) {
+            input = "(" + input.substring(0, 3) + ") " + input.substring(3);
+          }
+
+          // Ajouter un tiret après les trois chiffres suivants
+          if (input.length > 9) {
+            input = input.substring(0, 9) + "-" + input.substring(9, 13);
+          }
+
+          // Limiter la saisie à 13 caractères (y compris les symboles ajoutés)
+          if (input.length > 14) {
+            input = input.substring(0, 14);
+          }
+
+          // Mettre à jour la valeur du champ d'entrée
+          event.target.value = input;
+        });
+
+      document
+        .getElementById("btn2")
+        .addEventListener("click", function (event) {
+          let isValid = true;
+
+          // Vérification du nom du responsable
+          const nomRespo = document.getElementById("nomRespo").value.trim();
+          if (nomRespo === "") {
+            isValid = false;
+            document.getElementById("errorNomRespo").textContent =
+              "Le nom du responsable est requis.";
+          } else {
+            document.getElementById("errorNomRespo").textContent = "";
+          }
+
+          // Vérification du courriel
+          const courriel = document.getElementById("courriel").value.trim();
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (courriel === "") {
+            isValid = false;
+            document.getElementById("errorCourriel").textContent =
+              "Le courriel est requis.";
+          } else if (!emailPattern.test(courriel)) {
+            isValid = false;
+            document.getElementById("errorCourriel").textContent =
+              "Le courriel n'est pas valide.";
+          } else {
+            document.getElementById("errorCourriel").textContent = "";
+          }
+
+          // Vérification du numéro de téléphone
+          const numTel = document.getElementById("numTel").value.trim();
+          const phonePattern = /^\(\d{3}\) \d{3}-\d{4}$/;
+          if (numTel === "") {
+            isValid = false;
+            document.getElementById("errorNumTel").textContent =
+              "Le numéro de téléphone est requis.";
+          } else if (!phonePattern.test(numTel)) {
+            isValid = false;
+            document.getElementById("errorNumTel").textContent =
+              "Le numéro de téléphone n'est pas valide. Format attendu : (514) 546-1702.";
+          } else {
+            document.getElementById("errorNumTel").textContent = "";
+          }
+
+          // Si le formulaire n'est pas valide, empêcher la redirection
+          if (!isValid) {
+            event.preventDefault();
+          } else {
+            // Sauvegarder les informations et rediriger
+            savePersonalInfo();
+            window.location.href = "/rendez-vous/budget";
+          }
+        });
+
+      function savePersonalInfo() {
+        let nom = document.getElementById("nomRespo").value;
+        let courriel = document.getElementById("courriel").value;
+
+        // Supprimer tous les caractères non numériques
+
+        let telephone = document.getElementById("numTel").value;
+        telephone = telephone.replace(/\D/g, "");
+        let ideeApplication = document.getElementById("ideeApp").value;
+
+        // Sauvegarde des données dans le localStorage
+        localStorage.setItem("nom", nom);
+        localStorage.setItem("courriel", courriel);
+        localStorage.setItem("telephone", telephone);
+        localStorage.setItem("ideeApplication", ideeApplication);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rendez-Vous2</title>
+    <link rel="stylesheet" href="/fonts/cssFont.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/sassPages/rendezVous6.css" />
+  </head>
+
+  <body data-page-id="rendezVous6">
+    <section class="rdv-barre">
+      <div class="content">
+        <div class="logoWin">
+          <img
+            id="vector"
+            src="/assets/images/Rendez-vous/Rendez-vous6/Vector.png"
+            alt=""
+          />
+        </div>
+        <div id="message">
+          <h3 class="rdvous1">Merci de votre soumission</h3>
+          <p class="rdvous2">Vous reçevrez une confirmation via courriel</p>
+        </div>
+        <div class="btn">
+          <a href="/accueil"
+            ><button class="rdvous3" id="btnAcc">Accueil</button></a
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="/js/traduction/langue.js"></script>
+  <script src="/js/traduction/dictionnaire.js"></script>
+
+  <!-- <script>
+    // Function to send appointment data
+    async function sendAppointmentData() {
+      // Retrieve data from localStorage
+      let appointmentData = {
+        type: localStorage.getItem("type"),
+        nom: localStorage.getItem("nom"),
+        courriel: localStorage.getItem("courriel"),
+        telephone: localStorage.getItem("telephone"),
+        idee_application: localStorage.getItem("ideeApplication"),
+        budget: localStorage.getItem("budget"),
+        financement: localStorage.getItem("financement"),
+        date: localStorage.getItem("date"),
+        timeSlot: localStorage.getItem("timeSlot"),
+        questions: localStorage.getItem("questions"),
+      };
+
+      // Prepare JSON data
+      const jsonData = JSON.stringify(appointmentData);
+      console.log("before", jsonData);
+      // Send data to server
+      try {
+        const response = await fetch(
+          "http://localhost:8000/rendez-vous/sauvegarder",
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: jsonData,
+          }
+        );
+        console.log("after", jsonData);
+
+        const data = await response.json();
+        if (data.success) {
+          console.log("Données envoyées correctement", data);
+        } else {
+          console.log("Erreur lors de l'envoi des donnéess:", data);
+        }
+      } catch (error) {
+        console.error("Erreur lors de l'envoi de la requête :", error);
+      }
+
+      // Clear specific localStorage items
+      [
+        "type",
+        "nom",
+        "courriel",
+        "telephone",
+        "idee_application",
+        "budget",
+        "financement",
+        "date",
+        "timeSlot",
+        "questions",
+      ].forEach((key) => localStorage.removeItem(key));
+
+      console.log(jsonData);
+    }
+
+    // Call sendAppointmentData function after the page has fully loaded
+    window.addEventListener("load", sendAppointmentData);
+  </script> -->
+
+  <script>
+    // Function to send appointment data
+    async function sendAppointmentData() {
+      // Retrieve data from localStorage
+      let appointmentData = {
+        type: localStorage.getItem("type"),
+        nom: localStorage.getItem("nom"),
+        courriel: localStorage.getItem("courriel"),
+        telephone: localStorage.getItem("telephone"),
+        idee_application: localStorage.getItem("ideeApplication"),
+        budget: localStorage.getItem("budget"),
+        financement: localStorage.getItem("financement"),
+        date: localStorage.getItem("date"),
+        timeSlot: localStorage.getItem("timeSlot"),
+        questions: localStorage.getItem("questions"),
+      };
+
+      // Prepare JSON data
+      const jsonData = JSON.stringify(appointmentData);
+      console.log("before", jsonData);
+
+      const messageDiv = document.getElementById("message");
+
+      // Send data to server
+      try {
+        const response = await fetch(
+          "http://localhost:8000/rendez-vous/sauvegarder",
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: jsonData,
+          }
+        );
+        console.log("after", jsonData);
+
+        const data = await response.json();
+        if (data.success) {
+          console.log("Données envoyées correctement", data);
+          messageDiv.innerHTML = `<h3 class="rdvous1">Merci de votre soumission</h3>
+          <p class="rdvous2">Vous reçevrez une confirmation via courriel</p>`;
+        } else {
+          console.log("Erreur lors de l'envoi des donnéess:", data);
+          messageDiv.innerHTML = `${data.message}`;
+        }
+      } catch (error) {
+        console.error("Erreur lors de l'envoi de la requête :", error);
+        messageDiv.innerHTML = `${data.message}`;
+      }
+
+      // Clear specific localStorage items
+      [
+        "type",
+        "nom",
+        "courriel",
+        "telephone",
+        "idee_application",
+        "budget",
+        "financement",
+        "date",
+        "timeSlot",
+        "questions",
+      ].forEach((key) => localStorage.removeItem(key));
+
+      console.log(jsonData);
+    }
+
+    // Call sendAppointmentData function after the page has fully loaded
+    window.addEventListener("load", sendAppointmentData);
+  </script>
+</html>

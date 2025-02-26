@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/fonts/cssFont.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/icons/favicon.ico"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/sassPages/rendez-vous.css" />
+    <title>Rendez-Vous</title>
+  </head>
+  <body data-page-id="rendezVous1">
+    
+    
+    <section class="rdv-barre">
+      <div class="navigation">
+        <button id="retour">
+          <img src="/assets/images/Rendez-vous/retour.svg" alt="" />
+        </button>
+
+        <div class="langue">
+          <a id="vector" href=""
+            ><img src="/assets/images/header/Vector.png" alt=""
+          /></a>
+          <a id="en" href="">En</a>
+        </div>
+      </div>
+
+      <div class="bar-progress">
+        <div class="cercle" id="bgSelector"><img src="/assets/images/Rendez-vous/Check.svg"/></div>
+        <div class="line"></div>
+        <div class="cercle">2</div>
+        <div class="line"></div>
+        <div class="cercle">3</div>
+        <div class="line"></div>
+        <div class="cercle">4</div>
+        <div class="line"></div>
+        <div class="cercle">5</div>
+      </div>
+
+      <div class="content">
+        <div class="ampoule">
+          <a href="/rendez-vous/informations-personnelles">
+            <button id="idea" class="ampoule" onclick="saveType('idea')">
+              <div>
+                <img src="/assets/images/Rendez-vous/Ampoule.png" alt="" />
+                <p class="renv1">
+                  J'ai une idée et je souhaite en faire <br />
+                  une application
+                </p>
+              </div>
+    
+            </div>
+          </button>
+        </a>
+        
+        <a href="/rendez-vous/informations-personnelles">
+          <div class="building">
+            <button id="business" class="building" onclick="saveType('business')">
+              <div>
+                <img src="/assets/images/Rendez-vous/Building.png" alt="" />
+                <p class="renv2">
+                  J'ai une entreprise et je souhaite <br />
+                  créer une application
+                </p>
+              </div>
+            </button>
+          </div>
+        </a>
+        
+    </section>
+    <div class="popup-overlay" id="popup">
+      <div class="popup-content">
+        <p class="renv3">Votre progrès sera perdu. Êtes-vous certain?</p>
+        <div class="selBtn">
+          <button class="renv4" id="oui">Oui</button>
+          <button class="renv5" id="non">Non</button>
+        </div>
+      </div>
+    </div>  
+  </body>
+
+  <script src="/js/popup.js"></script>
+  <script src="/js/traduction/langue.js"></script>
+  <script src="/js/traduction/dictionnaire.js"></script>
+
+  <script>
+    function saveType(type) {
+        // Sauvegarde des données dans le localStorage
+        localStorage.setItem('type', type);
+    }
+
+   
+  </script>
+
+
+</html>

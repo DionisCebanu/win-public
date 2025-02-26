@@ -1,0 +1,14 @@
+@use "./timHortons.scss";
+
+.section1 {
+  .container {
+    .container-back {
+      background: linear-gradient(120deg, #FFC1C8 -0.07%, #A5ABFF 100%
+      ) !important;
+    }
+
+    img {
+      right: 13%;
+    }
+  }
+}

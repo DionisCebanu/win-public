@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rendez-Vous</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/fonts/cssFont.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/sassPages/rendez-vous4.css" />
+  </head>
+  <body data-page-id="rendezVous4">
+    <section class="rdv-barre">
+      <div class="navigation">
+        <button id="retour">
+          <img src="/assets/images/Rendez-vous/retour.svg" alt="" />
+        </button>
+        <div class="langue">
+          <a id="vector" href=""
+            ><img src="/assets/images/header/Vector.png" alt=""
+          /></a>
+          <a id="en" href="">En</a>
+        </div>
+      </div>
+      <div class="bar-progress">
+        <div class="cercle" id="bgSelector">
+          <img src="/assets/images/Rendez-vous/Check.svg" />
+        </div>
+        <div class="line" id="bgSelector"></div>
+        <div class="cercle" id="bgSelector">
+          <img src="/assets/images/Rendez-vous/Check.svg" />
+        </div>
+        <div class="line" id="bgSelector"></div>
+        <div class="cercle" id="bgSelector">
+          <img src="/assets/images/Rendez-vous/Check.svg" />
+        </div>
+        <div class="line" id="bgSelector"></div>
+        <div class="cercle" id="bgSelector">4</div>
+        <div class="line"></div>
+        <div class="cercle">5</div>
+      </div>
+      <section class="sectCalendrier">
+        <div class="txt">
+          <p class="rdv1">Date de rencontre</p>
+        </div>
+        <div class="card">
+          <div class="calendar-toolbar">
+            <button class="prev month-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="current-month"></div>
+            <button class="next month-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="calendar">
+            <div class="weekdays">
+              <div class="weekday-name">Di</div>
+              <div class="weekday-name">Lu</div>
+              <div class="weekday-name">Ma</div>
+              <div class="weekday-name">Me</div>
+              <div class="weekday-name">Je</div>
+              <div class="weekday-name">Ve</div>
+              <div class="weekday-name">Sa</div>
+            </div>
+            <div class="calendar-days"></div>
+          </div>
+          <div class="goto-buttons">
+            <button type="button" class="btnC prev-year">Prev Year</button>
+            <button type="button" class="btnC today">Today</button>
+            <button type="button" class="btnC next-year">Next Year</button>
+          </div>
+        </div>
+      </section>
+      <section class="sectHeures">
+        <div class="txt">
+          <p class="rdv5">Heure de rendez-vous</p>
+        </div>
+        <div class="heures-disponibles">
+          <button class="heure-btn">09:00</button>
+        </div>
+      </section>
+      <div class="btn">
+        <a href="/rendez-vous/budget"
+          ><button class="rdv6" id="btn1">Retour</button></a
+        >
+        <button class="rdv7" id="btn2" onclick="calendarSave()">Suivant</button>
+      </div>
+      <div class="popup-overlay" id="popup">
+        <div class="popup-content">
+          <p class="rdv8">Votre progrès sera perdu. Êtes-vous certain?</p>
+          <div class="selBtn">
+            <button class="rdv9" id="oui">Oui</button>
+            <button class="rdv10" id="non">Non</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/js/calendar.js"></script>
+    <script src="/js/popup.js"></script>
+    <script src="/js/traduction/dictionnaire.js"></script>
+    <script src="/js/traduction/langue.js"></script>
+
+    <script>
+      const buttons = document.querySelectorAll(".heure-btn");
+      let selectedTextH = null;
+      // Ajouter un écouteur d'événements à chaque bouton
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          // Supprimer la classe 'selected' de tous les boutons
+          buttons.forEach((btn) => btn.classList.remove("selected"));
+
+          // Ajouter la classe 'selected' au bouton cliqué
+          button.classList.add("selected");
+
+          // Récupérer le texte du bouton cliqué
+          selectedTextH = button.innerText;
+        });
+      });
+      function calendarSave() {
+        localStorage.setItem("timeSlot", selectedTextH);
+        console.log(selectedTextH);
+        localStorage.setItem("date", selectedDate.toLocaleDateString("en-US"));
+        if (
+          localStorage.getItem("date") != null &&
+          localStorage.getItem("timeSlot") != null
+        ) {
+          window.location.href = "/rendez-vous/info";
+        }
+      }
+    </script>
+  </body>
+</html>

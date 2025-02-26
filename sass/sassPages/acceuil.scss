@@ -1,0 +1,430 @@
+@use "../index.scss";
+
+:root {
+  --swiper-navigation-size: 30px;
+  color: var(--txt-black);
+}
+
+// Bienvenue
+.section2 {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column; /* Flex direction changed for small screens */
+  padding: 30px 20px; /* Padding added for better spacing on small screens */
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center; /* Center aligned text for better readability on small screens */
+  }
+  span {
+    color: var(--primary);
+  }
+
+  p {
+    font-size: 16px;
+    text-align: center; /* Center aligned text for better readability on small screens */
+  }
+  .ctabtn {
+    font-size: 16px;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 8px;
+    height: 46px;
+    // width: 147px;
+    border: none;
+    margin-top: 32px;
+    align-self: center; /* Center aligned button for better layout on small screens */
+  }
+  img {
+    width: 100%;
+    max-width: 250px; /* Max width set for better scalability on small screens */
+  }
+  #our-solu-desc-ctbtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center aligned elements for better layout on small screens */
+    gap: 0.5rem; /* Increased gap for better spacing on small screens */
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row; /* Original flex direction for larger screens */
+    padding: 0; /* Remove padding for larger screens */
+    h2 {
+      font-size: 45px;
+      text-align: left; /* Original text alignment for larger screens */
+    }
+    p {
+      text-align: left; /* Original text alignment for larger screens */
+    }
+    .ctabtn {
+      align-self: flex-start; /* Original alignment for larger screens */
+    }
+    img {
+      width: 436px; /* Original width for larger screens */
+    }
+    #our-solu-desc-ctbtn {
+      align-items: start; /* Original alignment for larger screens */
+      gap: 0.09rem; /* Original gap for larger screens */
+    }
+  }
+}
+
+// Section 3
+.sect3-0 {
+  display: flex;
+  flex-direction: column; /* Changed to column for small screens */
+  justify-content: center; /* Center content for better alignment on small screens */
+  align-items: center; /* Center align items for small screens */
+  background-color: black;
+  padding: 0 0 40px 0; /* Added padding for better spacing on small screens */
+  height: 100vh;
+
+  .background-section {
+    background-image: url("../../assets/images/Acceuil/AnnimationImg/tim.png");
+    width: 100%; /* Adjusted width for small screens */
+    height: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: background-image 1s ease-in-out;
+  }
+
+  .background-section:hover {
+    animation: changeBackground 20s infinite;
+  }
+
+  @keyframes changeBackground {
+    0% {
+      background-image: url("../../assets/images/Acceuil/AnnimationImg/tim.png");
+    }
+    14.2857% {
+      background-image: url("../../assets/images/Acceuil/AnnimationImg/ma-micro.png");
+    }
+    28.5714% {
+      background-image: url("../../assets/images/Acceuil/AnnimationImg/we-chalet.png");
+    }
+    42.8571% {
+      background-image: url("../../assets/images/Acceuil/AnnimationImg/easy-move.png");
+    }
+    57.1428% {
+      background-image: url("../../assets/images/Acceuil/AnnimationImg/pest-control.png");
+    }
+    71.4285% {
+      background-image: url("../../assets/images/Acceuil/AnnimationImg/doordazzle.png");
+    }
+    85.7142% {
+      background-image: url("../../assets/images/Acceuil/AnnimationImg/impact.png");
+    }
+    97% {
+      background-image: url("../../assets/images/Acceuil/AnnimationImg/reno-assurance.png");
+    }
+    100% {
+      background-image: url("../../assets/images/Acceuil/AnnimationImg/tim.png");
+    }
+  }
+
+  .rightPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-right: 0;
+
+    h3 {
+      font-family: "Visby CF";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2rem; /* Adjusted font size for small screens */
+      line-height: 2.5rem; /* Adjusted line height for small screens */
+      color: white;
+    }
+
+    .ctabtn {
+      font-size: 1rem; /* Adjusted font size for small screens */
+      background-color: var(--primary);
+      color: white;
+      border-radius: 8px;
+      height: 46px;
+      padding: 0 1.5rem; /* Added padding for better spacing on small screens */
+      border: none;
+      margin-top: 1rem; /* Adjusted margin for small screens */
+    }
+  }
+
+  @media (min-width: 768px) {
+    height: 100vh;
+    flex-direction: row; /* Original flex direction for larger screens */
+    padding: 0; /* Remove padding for larger screens */
+
+    .background-section {
+      width: 65%; /* Original width for larger screens */
+      height: 110%; /* Original height for larger screens */
+    }
+
+    .rightPart {
+      gap: 2rem; /* Original gap for larger screens */
+      margin-right: 5rem; /* Original margin for larger screens */
+      align-items: flex-start;
+
+      h3 {
+        font-size: 2.2rem; /* Original font size for larger screens */
+        line-height: 3rem; /* Original line height for larger screens */
+      }
+
+      .ctabtn {
+        font-size: 16px; /* Original font size for larger screens */
+        margin-top: 0; /* Original margin for larger screens */
+      }
+    }
+  }
+}
+
+// Section 4
+.section4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 1rem; /* Added padding around the entire section */
+
+  h1 {
+    font-size: 2rem; /* Adjusted for smaller screens */
+    font-weight: 700;
+    margin-bottom: 2rem; /* Adjusted for smaller screens */
+    margin-top: 0; /* Ensure no margin at the top */
+  }
+
+  span {
+    color: var(--primary);
+  }
+
+  .compteurs {
+    display: grid;
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* Changed to 1 column for small screens */
+    gap: 1.5rem; /* Adjusted for smaller screens */
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 1rem; /* Adjusted padding for smaller screens */
+
+    .compteur {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      img {
+        width: 100%;
+        max-width: 10rem; /* Adjusted for smaller screens */
+      }
+
+      .txt {
+        max-width: 65%;
+        position: absolute;
+        font-size: 1rem; /* Adjusted for smaller screens */
+        text-align: center;
+        margin: 0;
+
+        p {
+          margin: 0;
+          word-wrap: break-word; /* Ensure long text wraps */
+        }
+
+        .number {
+          font-size: 2rem; /* Adjusted for smaller screens */
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding: 5rem; /* Original padding for larger screens */
+
+    h1 {
+      font-size: 45px; /* Original size for larger screens */
+      margin-bottom: 70px; /* Original margin for larger screens */
+    }
+
+    .compteurs {
+      grid-template-columns: repeat(
+        3,
+        1fr
+      ); /* Original grid layout for larger screens */
+      gap: 2.5rem 9rem; /* Original gap for larger screens */
+      padding: 1.5rem 2.5rem; /* Original padding for larger screens */
+
+      .compteur {
+        img {
+          max-width: 15rem; /* Original max-width for larger screens */
+        }
+
+        .txt {
+          font-size: 16px; /* Original font-size for larger screens */
+
+          p {
+            word-wrap: break-word; /* Ensure long text wraps */
+          }
+
+          .number {
+            font-size: 2.5rem; /* Original font-size for larger screens */
+          }
+        }
+      }
+    }
+  }
+}
+
+// Section 6
+.section6 {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .container6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .title {
+      h1 {
+        font-size: 1.5rem; /* Adjusted for smaller screens */
+        font-weight: 700;
+        margin-bottom: 2rem; /* Adjusted for smaller screens */
+        margin-top: 0;
+        text-align: center;
+      }
+      span {
+        color: var(--primary);
+      }
+    }
+
+    swiper-container {
+      -webkit-box-shadow: 0px 2px 9px 6px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 2px 9px 6px rgba(0, 0, 0, 0.3);
+      padding: 1rem 20px;
+      width: 100vw;
+      height: 250px;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      background: #fff;
+
+      swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          transition: transform 0.3s ease;
+        }
+
+        &:hover img {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container6 {
+      .title {
+        h1 {
+          font-size: 45px; /* Original size for larger screens */
+          margin-bottom: 70px; /* Original margin for larger screens */
+        }
+      }
+    }
+  }
+}
+
+// Section 7
+.section7 {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0; // Adjusted for small screens
+
+  h1 {
+    font-size: 1.5rem; // Adjusted for small screens
+    font-weight: 700;
+    text-align: center;
+  }
+
+  span {
+    color: var(--primary);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; // Added for better spacing on small screens
+  }
+
+  img {
+    width: 100%; // Ensures images take full width on small screens
+    max-width: 300px; // Adjusts max-width for better fit on small screens
+  }
+
+  #selector {
+    margin-right: 0; // Removes margin on small screens for a centered layout
+    margin-bottom: 1rem; // Adds margin to create space between images
+  }
+
+  p {
+    font-size: 14px; // Adjusted for small screens
+    text-align: center;
+    margin-bottom: 2rem; // Adjusted for small screens
+    padding: 0 1rem; // Adds padding to improve text readability on small screens
+
+    span {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding: 100px 0;
+
+    h1 {
+      font-size: 45px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 3rem;
+    }
+
+    .container {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem; // Adjusts gap for better spacing on larger screens
+
+      img {
+        width: 498px;
+        max-width: none; // Ensures images don't overflow on larger screens
+        margin-bottom: 0; // Removes bottom margin for larger screens
+      }
+
+      #selector {
+        margin-right: 84px; // Adds margin on larger screens for a centered layout
+        margin-bottom: 0; // Removes bottom margin for larger screens
+      }
+    }
+  }
+}

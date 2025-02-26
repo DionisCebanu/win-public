@@ -1,0 +1,460 @@
+// * {
+//version desktop
+@media (min-width: 769px) {
+  .questions {
+    p {
+      margin-right: 0;
+      margin-top: 80px;
+      font-size: 45px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-align: center;
+      span {
+        color: var(--primary);
+      }
+    }
+    .test {
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      margin: auto;
+      p {
+        text-align: left;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        width: 600px;
+        span {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          color: var(--primary);
+        }
+      }
+    }
+
+    .forms-question {
+      padding-top: 40px;
+      padding-bottom: 63px;
+      #contactForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        height: auto;
+        padding-right: 0;
+
+        #lblQuestion {
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 600;
+          border: 0;
+        }
+      }
+      .question-gauche {
+        width: 500px;
+        border: 0;
+        margin-top: 10px;
+        .inputQuestion1,
+        .inputQuestion2,
+        .inputQuestion3 {
+          width: 500px;
+          padding: 11px 10px;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          background-color: #f4f4f4;
+          border: 0;
+        }
+        .lblInput {
+          margin-top: 17px;
+        }
+      }
+      .question-droit {
+        margin-top: 20px;
+        width: 500px;
+        border: 0;
+        #txtArea {
+          width: 500px;
+          height: 203px;
+          background-color: #f4f4f4;
+          border: 0;
+          vertical-align: top;
+          resize: none;
+          padding: 10px;
+        }
+      }
+    }
+    .btn {
+      text-align: center;
+      width: 500px;
+      margin-top: 20px;
+      button {
+        width: 171px;
+        height: 46px;
+        padding: 10px 20px;
+        border-radius: 8px;
+        background-color: var(--primary);
+        color: white;
+        border: 0;
+      }
+    }
+    .cadre-question {
+      padding-bottom: 40px;
+      width: 1000px;
+      box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
+      margin: auto;
+    }
+    .error {
+      font-size: 12px;
+      color: var(--primary);
+    }
+  }
+
+  .informations-reseaux {
+    p {
+      font-size: 55px;
+      font-style: normal;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 150px;
+    }
+    .information {
+      margin-bottom: 200px;
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      p {
+        text-align: center;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        span {
+          color: var(--primary);
+        }
+      }
+      .information-contact {
+        h2 {
+          margin-bottom: 100px;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+
+        .grid-contact {
+          display: grid;
+          align-items: center;
+          grid-template-columns: repeat(1, 271px);
+          column-gap: 110px;
+        }
+        .contact {
+          margin-top: 0;
+          padding: 35px 25px;
+          padding-left: 0;
+          padding-top: 0;
+          padding-bottom: 30px;
+          #p1 {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-align: left;
+            margin-top: 0;
+            width: 350px;
+          }
+          #p2 {
+            margin-top: 0;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-align: left;
+            width: 360px;
+          }
+        }
+      }
+      .information-reseau-sociaux {
+        h2 {
+          margin-bottom: 50px;
+          margin-top: -210px;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+
+        .grid-reseau {
+          display: grid;
+          grid-template-columns: repeat(3, 200px);
+          column-gap: 100px;
+          row-gap: 75px;
+        }
+        .imgs {
+          width: 221px;
+          text-align: center;
+          p {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            span {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              color: var(--primary);
+            }
+          }
+        }
+        #img {
+          width: 116px;
+        }
+      }
+    }
+  }
+}
+
+// }
+
+//version mobile
+@media (max-width: 768px) {
+  .questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    p {
+      font-size: 40px;
+      font-weight: bold;
+      span {
+        color: var(--primary);
+      }
+    }
+    .test {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+      p {
+        margin-bottom: -20px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        span {
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          color: var(--primary);
+        }
+      }
+    }
+
+    .forms-question {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-top: 40px;
+      padding-bottom: 63px;
+      #contactForm {
+        height: auto;
+        padding-right: 0;
+        #lblQuestion {
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 600;
+          border: 0;
+        }
+      }
+      .question-gauche {
+        text-align: left;
+        border: 0;
+        margin-top: 10px;
+        .inputQuestion1,
+        .inputQuestion2,
+        .inputQuestion3 {
+          display: flex;
+          justify-content: column;
+          align-items: center;
+          width: 300px;
+          padding: 11px 10px;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          background-color: #f4f4f4;
+          border: 0;
+          border-radius: 10px;
+        }
+        .lblInput {
+          margin-top: 17px;
+        }
+      }
+      .question-droit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        margin-top: 20px;
+        border: 0;
+        #txtArea {
+          width: 300px;
+          height: 203px;
+          background-color: #f4f4f4;
+          border: 0;
+          border-radius: 10px;
+        }
+      }
+    }
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 20px;
+      button {
+        width: 300px;
+        height: 46px;
+        padding: 10px 20px;
+        border-radius: 8px;
+        background-color: var(--primary);
+        color: white;
+        border: 0;
+      }
+    }
+    .cadre-question {
+      padding-bottom: 40px;
+      width: 1000px;
+      box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
+      margin: auto;
+    }
+    .error {
+      font-size: 12px;
+      color: var(--primary);
+    }
+  }
+
+  .informations-reseaux {
+    p {
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .information {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        text-align: center;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        span {
+          color: var(--primary);
+        }
+      }
+      .information-contact {
+        order: 2;
+        h2 {
+          margin-bottom: 30px;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+
+        .grid-contact {
+          display: grid;
+          align-items: center;
+          grid-template-columns: repeat(1, 271px);
+        }
+        .contact {
+          margin-top: 0;
+          padding: 35px 25px;
+          padding-left: 0;
+          padding-top: 0;
+          padding-bottom: 30px;
+          #p1 {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-align: left;
+            margin-top: 0;
+            width: 350px;
+          }
+          #p2 {
+            margin-top: 0;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-align: left;
+            width: 300px;
+            // color: var(--primary);
+          }
+        }
+      }
+      .information-reseau-sociaux {
+        order: 1;
+        h2 {
+          margin-bottom: 10px;
+          // margin-left: 20px;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+
+        .grid-reseau {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          justify-content: center;
+        }
+        .imgs {
+          width: 150px;
+          margin-bottom: 30px;
+          text-align: center;
+          p {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            span {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              color: var(--primary);
+            }
+          }
+        }
+        #img {
+          width: 116px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "winwebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass sass:css",
+    "watch:sass": "nodemon --watch sass --ext scss --exec \"npm run sass\"",
+    "build:client": "vite build",        
+    "build:server": "node esbuild.config.js", 
+    "build": "npm run build:client && npm run build:server",
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.1",
+    "sass": "^1.77.1"
+  },
+  "devDependencies": {
+    "vite": "^6.1.1"
+  }
+}

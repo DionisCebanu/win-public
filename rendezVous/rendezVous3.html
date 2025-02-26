@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rendez-Vous3</title>
+    <link rel="stylesheet" href="/fonts/cssFont.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/sassPages/rendez-vous3.css" />
+  </head>
+  <body data-page-id="rendezVous3">
+    <section class="rdv-barre">
+      <div class="navigation">
+        <button id="retour">
+          <img src="/assets/images/Rendez-vous/retour.svg" alt="" />
+        </button>
+
+        <div class="langue">
+          <a href="" id="vector"
+            ><img src="/assets/images/header/Vector.png" alt=""
+          /></a>
+          <a id="en" href="">En</a>
+        </div>
+      </div>
+      <div class="bar-progress">
+        <div class="cercle" id="bgSelector">
+          <img src="/assets/images/Rendez-vous/Check.svg" alt="" />
+        </div>
+        <div class="line" id="bgSelector"></div>
+        <div class="cercle" id="bgSelector">
+          <img src="/assets/images/Rendez-vous/Check.svg" alt="" />
+        </div>
+        <div class="line" id="bgSelector"></div>
+        <div class="cercle" id="bgSelector">3</div>
+        <div class="line"></div>
+        <div class="cercle">4</div>
+        <div class="line"></div>
+        <div class="cercle">5</div>
+      </div>
+      <div class="rdv2-2">
+        <div class="montant-projet">
+          <h3 class="rend1">Budget du projet</h3>
+          <ul>
+            <li>
+              <input
+                type="radio"
+                class="option1"
+                id="option1"
+                name="options"
+                value="35000"
+              />
+              <label for="option1">$ 35,000 - 50,000 </label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                class="option2"
+                id="option2"
+                name="options"
+                value="50000"
+              />
+              <label for="option2">$ 50,000 - 75,000 </label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                class="option3"
+                id="option3"
+                name="options"
+                value="75000"
+              />
+              <label for="option3">$ 75,000 - 100,000 </label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                class="option4"
+                id="option4"
+                name="options"
+                value="100000"
+              />
+              <label for="option4">$ 100,000 - 150,000 </label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                class="option5"
+                id="option5"
+                name="options"
+                value="150000"
+              />
+              <label for="option5">$ 150,000+ </label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                class="option6"
+                id="option6"
+                name="options"
+                value="custom"
+              />
+              <label class="rend2" for="option6">Montant personnalisé </label>
+            </li>
+          </ul>
+        </div>
+        <div id="montant-perso">
+          <form action="#">
+            <label class="rend3" for="">votre budget</label><br />
+            <input type="text" id="leBudget" />
+          </form>
+        </div>
+      </div>
+
+      <div class="qst">
+        <h3 class="rend4">Avez-vous besoin de financement?</h3>
+        <div class="rad-O-N">
+          <ul>
+            <li>
+              <input
+                type="radio"
+                id="RadioOn"
+                name="financement"
+                value="oui"
+              /><br />
+              <label class="rend5" for="RadioOn">Oui </label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                id="RadioOff"
+                name="financement"
+                value="non"
+              /><br />
+              <label class="rend6" for="RadioOff">Non </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="divFinance">
+        <button class="btnFinancement" id="btnFinancement2" onclick="btnWin()">
+          <img
+            src="/assets/images/Rendez-vous/Rendez-vous3/Frame278.png"
+            alt=""
+          />
+        </button>
+        <button
+          class="btnFinancement"
+          id="btnFinancement1"
+          onclick="btnDesjardins()"
+        >
+          <img
+            id="img-desjardins"
+            src="/assets/images/Rendez-vous/Rendez-vous3/progress bar4.png"
+            alt=""
+          />
+        </button>
+      </div>
+      <div class="btn">
+        <a href="/rendez-vous/informations-personnelles">
+          <button class="rend7" id="btn1">Retour</button>
+        </a>
+
+        <button class="rend8" id="btn2" onclick="saveBudgetInfo()">
+          Suivant
+        </button>
+      </div>
+    </section>
+    <div class="popup-overlay" id="popup">
+      <div class="popup-content">
+        <p class="rend9">Votre progrès sera perdu. Êtes-vous certain?</p>
+        <div class="selBtn">
+          <button class="rend10" id="oui">Oui</button>
+          <button class="rend11" id="non">Non</button>
+        </div>
+      </div>
+    </div>
+    <script src="/js/popup.js"></script>
+    <script src="/js/rendez-vous3.js"></script>
+    <script src="/js/traduction/dictionnaire.js"></script>
+    <script src="/js/traduction/langue.js"></script>
+
+    <script>
+      function saveBudgetInfo() {
+        // Sélectionner tous les boutons radio du groupe 'options'
+        const radios = document.getElementsByName("options");
+        let selectedText = "";
+
+        // Boucler à travers les boutons radio pour trouver le sélectionné
+        radios.forEach((radio) => {
+          if (radio.checked) {
+            // Trouver le label correspondant en utilisant l'attribut 'for'
+            const label = radio;
+            selectedText = radio.value;
+
+            if (selectedText === "custom") {
+              selectedText = document.getElementById("leBudget").value;
+            }
+          }
+        });
+
+        // Sauvegarder les données dans le localStorage
+        localStorage.setItem("budget", selectedText);
+        localStorage.setItem("financement", selectedTextf);
+
+        console.log(selectedText);
+        console.log(selectedTextf);
+        window.location.href = "/rendez-vous/date";
+      }
+      selectedTextf = "";
+      function btnWin() {
+        selectedTextf = "win";
+      }
+      function btnDesjardins() {
+        selectedTextf = "desjardins";
+      }
+    </script>
+  </body>
+</html>

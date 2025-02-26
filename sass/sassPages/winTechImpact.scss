@@ -1,0 +1,158 @@
+//@use "../../sass/index.scss";
+@use "../sassPages/winTechTim.scss";
+
+* {
+  @media (min-width: 769px) {
+    // .contentWrap {
+    //   width: 100%;
+    // }
+    .frameImpact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .leftPartImpact,
+    .rightPartImpact {
+      width: 50%;
+      height: 100vh;
+    }
+    .leftPartImpact {
+      display: flex;
+      flex-direction: column;
+      padding: 180px 40px 80px 40px;
+      position: relative;
+      border: none;
+      border-radius: 0 40px 40px 0;
+      background: linear-gradient(180deg, #ffffff 0%, #f1f1f1 100%);
+      h1 {
+        color: var(--primary);
+        font-family: "Visby CF";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 130%;
+      }
+      h3 {
+        font-family: "Visby CF";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 37px;
+      }
+      p {
+        font-family: "Visby CF";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: justify;
+        color: #383330;
+      }
+    }
+
+    .rightPartImpact {
+      background-image: url("../../assets/images/winImpact/back_grdImpact.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      // height: 100vh;
+      img {
+        width: 30%;
+        position: absolute;
+        z-index: 2;
+      }
+      video {
+        width: 28%;
+        position: absolute;
+        z-index: 3;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+* {
+  @media (max-width: 769px) {
+    .frameImpact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+    }
+
+    .leftPartImpact,
+    .rightPartImpact {
+      justify-content: center;
+      width: 100vw;
+      height: 69vh;
+    }
+    .leftPartImpact {
+      display: flex;
+      flex-direction: column;
+      padding-top: 40px;
+      padding-left: 19px;
+      padding-right: 10px;
+      position: relative;
+      border: none;
+      height: 400px;
+      background: linear-gradient(180deg, #ffffff 0%, #f1f1f1 100%);
+
+      h1 {
+        color: var(--primary);
+        font-family: "Visby CF";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 130%;
+      }
+      h3 {
+        font-family: "Visby CF";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 37px;
+      }
+      p {
+        font-family: "Visby CF";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: justify;
+        color: #383330;
+      }
+    }
+
+    .rightPartImpact {
+      background-image: url("../../assets/images/winImpact/back_grdImpact.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      order: -1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      img {
+        width: 30%;
+        position: absolute;
+        z-index: 2;
+      }
+      video {
+        width: 28%;
+        position: absolute;
+        z-index: 3;
+        border-radius: 20px;
+      }
+    }
+  }
+}

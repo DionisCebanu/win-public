@@ -1,0 +1,432 @@
+@media (min-width: 769px) {
+  .questions p {
+    margin-right: 0;
+    margin-top: 80px;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+  }
+  .questions p span {
+    color: var(--primary);
+  }
+  .questions .test {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+  }
+  .questions .test p {
+    text-align: left;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 600px;
+  }
+  .questions .test p span {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--primary);
+  }
+  .questions .forms-question {
+    padding-top: 40px;
+    padding-bottom: 63px;
+  }
+  .questions .forms-question #contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    padding-right: 0;
+  }
+  .questions .forms-question #contactForm #lblQuestion {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    border: 0;
+  }
+  .questions .forms-question .question-gauche {
+    width: 500px;
+    border: 0;
+    margin-top: 10px;
+  }
+  .questions .forms-question .question-gauche .inputQuestion1,
+  .questions .forms-question .question-gauche .inputQuestion2,
+  .questions .forms-question .question-gauche .inputQuestion3 {
+    width: 500px;
+    padding: 11px 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    background-color: #f4f4f4;
+    border: 0;
+  }
+  .questions .forms-question .question-gauche .lblInput {
+    margin-top: 17px;
+  }
+  .questions .forms-question .question-droit {
+    margin-top: 20px;
+    width: 500px;
+    border: 0;
+  }
+  .questions .forms-question .question-droit #txtArea {
+    width: 500px;
+    height: 203px;
+    background-color: #f4f4f4;
+    border: 0;
+    vertical-align: top;
+    resize: none;
+    padding: 10px;
+  }
+  .questions .btn {
+    text-align: center;
+    width: 500px;
+    margin-top: 20px;
+  }
+  .questions .btn button {
+    width: 171px;
+    height: 46px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: var(--primary);
+    color: white;
+    border: 0;
+  }
+  .questions .cadre-question {
+    padding-bottom: 40px;
+    width: 1000px;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
+    margin: auto;
+  }
+  .questions .error {
+    font-size: 12px;
+    color: var(--primary);
+  }
+  .informations-reseaux p {
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 150px;
+  }
+  .informations-reseaux .information {
+    margin-bottom: 200px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .informations-reseaux .information p {
+    text-align: center;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .informations-reseaux .information p span {
+    color: var(--primary);
+  }
+  .informations-reseaux .information .information-contact h2 {
+    margin-bottom: 100px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .informations-reseaux .information .information-contact .grid-contact {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(1, 271px);
+    column-gap: 110px;
+  }
+  .informations-reseaux .information .information-contact .contact {
+    margin-top: 0;
+    padding: 35px 25px;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+  .informations-reseaux .information .information-contact .contact #p1 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+    margin-top: 0;
+    width: 350px;
+  }
+  .informations-reseaux .information .information-contact .contact #p2 {
+    margin-top: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+    width: 360px;
+  }
+  .informations-reseaux .information .information-reseau-sociaux h2 {
+    margin-bottom: 50px;
+    margin-top: -210px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .informations-reseaux .information .information-reseau-sociaux .grid-reseau {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    column-gap: 100px;
+    row-gap: 75px;
+  }
+  .informations-reseaux .information .information-reseau-sociaux .imgs {
+    width: 221px;
+    text-align: center;
+  }
+  .informations-reseaux .information .information-reseau-sociaux .imgs p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+  .informations-reseaux .information .information-reseau-sociaux .imgs p span {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--primary);
+  }
+  .informations-reseaux .information .information-reseau-sociaux #img {
+    width: 116px;
+  }
+}
+@media (max-width: 768px) {
+  .questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+  .questions p {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .questions p span {
+    color: var(--primary);
+  }
+  .questions .test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+  .questions .test p {
+    margin-bottom: -20px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .questions .test p span {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--primary);
+  }
+  .questions .forms-question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 63px;
+  }
+  .questions .forms-question #contactForm {
+    height: auto;
+    padding-right: 0;
+  }
+  .questions .forms-question #contactForm #lblQuestion {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    border: 0;
+  }
+  .questions .forms-question .question-gauche {
+    text-align: left;
+    border: 0;
+    margin-top: 10px;
+  }
+  .questions .forms-question .question-gauche .inputQuestion1,
+  .questions .forms-question .question-gauche .inputQuestion2,
+  .questions .forms-question .question-gauche .inputQuestion3 {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    width: 300px;
+    padding: 11px 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    background-color: #f4f4f4;
+    border: 0;
+    border-radius: 10px;
+  }
+  .questions .forms-question .question-gauche .lblInput {
+    margin-top: 17px;
+  }
+  .questions .forms-question .question-droit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin-top: 20px;
+    border: 0;
+  }
+  .questions .forms-question .question-droit #txtArea {
+    width: 300px;
+    height: 203px;
+    background-color: #f4f4f4;
+    border: 0;
+    border-radius: 10px;
+  }
+  .questions .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .questions .btn button {
+    width: 300px;
+    height: 46px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: var(--primary);
+    color: white;
+    border: 0;
+  }
+  .questions .cadre-question {
+    padding-bottom: 40px;
+    width: 1000px;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
+    margin: auto;
+  }
+  .questions .error {
+    font-size: 12px;
+    color: var(--primary);
+  }
+  .informations-reseaux p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .informations-reseaux .information {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  .informations-reseaux .information p {
+    text-align: center;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .informations-reseaux .information p span {
+    color: var(--primary);
+  }
+  .informations-reseaux .information .information-contact {
+    order: 2;
+  }
+  .informations-reseaux .information .information-contact h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .informations-reseaux .information .information-contact .grid-contact {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(1, 271px);
+  }
+  .informations-reseaux .information .information-contact .contact {
+    margin-top: 0;
+    padding: 35px 25px;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+  .informations-reseaux .information .information-contact .contact #p1 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+    margin-top: 0;
+    width: 350px;
+  }
+  .informations-reseaux .information .information-contact .contact #p2 {
+    margin-top: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+    width: 300px;
+  }
+  .informations-reseaux .information .information-reseau-sociaux {
+    order: 1;
+  }
+  .informations-reseaux .information .information-reseau-sociaux h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .informations-reseaux .information .information-reseau-sociaux .grid-reseau {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+  .informations-reseaux .information .information-reseau-sociaux .imgs {
+    width: 150px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .informations-reseaux .information .information-reseau-sociaux .imgs p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+  .informations-reseaux .information .information-reseau-sociaux .imgs p span {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--primary);
+  }
+  .informations-reseaux .information .information-reseau-sociaux #img {
+    width: 116px;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

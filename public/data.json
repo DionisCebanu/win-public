@@ -1,0 +1,436 @@
+[
+  {
+    "id": 0,
+    "prototype": true,
+    "classT": "tm",
+    "title": "timHortons",
+    "experience": {
+      "titre1": "Tim Hortons",
+      "titre3": "Une expérience client améliorée !",
+      "text": "Tim Hortons améliore son expérience client avec une interface utilisateur intuitive et de nouvelles fonctionnalités permettant de personnaliser vos commandes et d'accéder à des récompenses exclusives.",
+      "img": "../assets/images/singleProjet/Tim/generique-01.png"
+    },
+
+    "production": {
+      "titre2": "La production phénoménale <br/>de <span>Tim Hortons</span>",
+      "text": "Optimisez votre expérience chez Tim Hortons avec une application mobile intuitive et de nouvelles fonctionnalités permettant de personnaliser vos commandes et d'accéder à des récompenses exclusives.",
+      "img": "../assets/images/singleProjet/Tim/generique-02.png"
+    },
+
+    "processus": {
+      "titre2": "Un processus de paiement <br /><span style='color: var(--primary);'>simple et efficace",
+      "text": "De plus, l'application offre des promotions spéciales et des suggestions basées sur vos préférences, rendant chaque visite encore plus agréable. Notre firme est fière de collaborer avec Tim Hortons pour enrichir chaque visite.",
+      "img": "../assets/images/singleProjet/Tim/generique-03.png"
+    },
+
+    "mission": {
+      "titre2": "<span style='color: var(--primary);'>Mission:</span><br />Ajouter des fonctionnalités clés",
+      "text": "Notre mission se focalisait sur l'amélioration du design UI/UX et l'intégration de fonctionnalités clés pour enrichir l'expérience utilisateur. En nous appuyant sur les retours de Tim Hortons, nous avons pris le défi de concevoir une interface qui allie esthétisme et praticité, tout en répondant aux attentes des utilisateurs grâce à une analyse approfondie de leurs besoins.",
+      "img": "../assets/images/singleProjet/Tim/mission-tim.png"
+    },
+
+    "design": {
+      "titre2": "<span style='color: var(--primary);'>Design:</span> Modernité et cohérence",
+      "text": "Nous avons opté pour la typographie Circular STD et une palette de couleurs qui harmonise le rouge iconique de Tim Hortons avec un gris foncé, offrant une lisibilité et une esthétique améliorées. Cette approche a renforcé la cohérence visuelle tout en respectant l'identité de la marque, créant une expérience à la fois rafraîchie et familière.",
+      "img": "../assets/images/singleProjet/Tim/design-tim.png"
+    },
+
+    "iconographie": {
+      "titre2": "<span style='color: var(--primary);'>Iconographie</span> et navigation",
+      "text": "Des icônes intuitives ont été développées pour simplifier la navigation et l'interaction, rendant l'expérience de commande plus fluide et agréable. La refonte de l'interface met en avant une utilisation optimisée de l'espace et une barre de navigation accessible, favorisant une immersion totale dans le processus de commande.",
+      "img": "../assets/images/singleProjet/Tim/ico-nav.png"
+    },
+
+    "img-wrap": "../assets/images/singleProjet/Tim/wrapper.png"
+  },
+
+  {
+    "id": 1,
+    "prototype": true,
+    "classT": "imp",
+    "title": "impact",
+    "experience": {
+      "titre1": "Impact",
+      "titre3": "Un constat à l'amiable numérique.",
+      "text": "Impact est une application mobile qui révolutionne le constat à l'amiable, permettant un échange de données sécurisé en deux minutes seulement.",
+      "img": "../assets/images/singleProjet/Impact/generique-01.png"
+    },
+
+    "production": {
+      "titre2": "<span style='color: var(--primary);'> Impact : révolution des </span> </br> constats mobiles",
+      "text": "Impact : révolution des constats mobiles Impact simplifie aussi toutes les démarches post-accident grâce à sa facilité d'utilisation inégalée.",
+      "img": "../assets/images/singleProjet/Impact/generique-02.png"
+    },
+
+    "processus": {
+      "titre2": "Des fonctionnalités <br><span style='color: var(--primary);'>intuitives et accessibles</span>",
+      "text": "Chez Win Technologie, nous sommes fiers de rendre le processus de déclaration plus fluide et efficace au Canada, aux États-Unis et en France.",
+      "img": "../assets/images/singleProjet/Impact/generique-03.png"
+    },
+
+    "mission": {
+      "titre2": "<span style='color: var(--primary);'>Mission:</span><br/> Révolutionner le constat à l'amiable",
+      "text": "Notre mission est de révolutionner le processus traditionnel du constat à l'amiable en le remplaçant par une application mobile innovante dans trois pays clés : le Canada, les États-Unis et la France.",
+      "img": "../assets/images/singleProjet/Impact/mission-impact.png"
+    },
+
+    "design": {
+      "titre2": "<span>L'idée</span> géniale",
+      "text": "L'idée novatrice derrière \"Impact\" est née de la frustration d'un entrepreneur constamment entravé par les embouteillages et les accidents entre son entreprise de Laval et Longueuil, où il résidait. Conscient des pertes de temps et des désagréments causés par ces incidents, il a imaginé une solution brillante qui simplifierait radicalement le processus de constat à l'amiable. Ainsi, ce qui autrefois nécessitait 30 minutes est désormais accompli en seulement 2 minutes grâce à \"Impact\".",
+      "img": "../assets/images/singleProjet/Impact/design-impact.png"
+    },
+
+    "iconographie": {
+      "titre2": "<span>Conception</span> Intuitive",
+      "text": "Notre équipe chez Win a abordé le projet avec un souci de simplicité et de convivialité. L'interface d'Impact a été soigneusement conçue pour offrir une expérience utilisateur intuitive et agréable. Les choix de couleurs, de typographie et de disposition ont été pensés pour garantir une navigation fluide et une compréhension facile des fonctionnalités.",
+      "img": "../assets/images/singleProjet/Impact/ico-nav.png"
+    },
+
+    "img-wrap": "../assets/images/singleProjet/Impact/wrapper.png"
+  },
+
+  {
+    "id": 2,
+    "prototype": true,
+    "classT": "mc",
+    "title": "maMicro",
+    "experience": {
+      "titre1": "Ma Micro",
+      "titre3": "Toutes les microbrasseries a un seul endroit.",
+      "text": "Ma Micro est l'application mobile la plus aboutie regroupant toutes les microbrasseries au Québec.",
+      "img": "../assets/images/singleProjet/Ma-Micro/generique-01.png"
+    },
+
+    "production": {
+      "titre2": "Innovation mobile pour les </br>microbrasseries<span style='color: var(--primary);'>Ma Micro</span>",
+      "text": "Ma Micro une expérience complète pour découvrir, partager et célébrer avec la possibilité d'échanger avis, photos et vidéos en direct.",
+      "img": "../assets/images/singleProjet/Ma-Micro/generique-02.png"
+    },
+
+    "processus": {
+      "titre2": "Une interface utilisateur <br><span style='color: var(--primary);'>claire et conviviale</span>",
+      "text": "Notre équipe a conçu Ma Micro pour célébrer et soutenir la communauté brassicole du Québec.",
+      "img": "../assets/images/singleProjet/Ma-Micro/generique-03.png"
+    },
+
+    "mission": {
+      "titre2": "<span style='color: var(--primary);'>L'histoire</span><br/> derrière Ma Micro",
+      "text": "L'histoire de Ma Micro a commencé en 2020, lorsque Monsieur Carrier, un passionné de bières artisanales, a lancé l'idée de créer une plateforme pour explorer et soutenir les microbrasseries du Québec et de d'Amérique du Nord. Après une première tentative décevante avec une agence généraliste, il a choisi de collaborer avec notre équipe spécialisée chez Win pour développer cette application mobile.",
+      "img": "../assets/images/singleProjet/Ma-Micro/mission-mamicro.png"
+    },
+
+    "design": {
+      "titre2": "<span>Investissement</span> et engagement",
+      "text": "Un ami proche et investisseur de Monsieur Carrier s'est également impliqué, renforçant ainsi l'élan entrepreneurial du projet. Parallèlement, les associés de notre firme ont pris la décision stratégique d'investir dans Ma Micro via notre fonds d'investissement Win Technologie. En combinant nos ressources financières, notre expertise et notre passion commune pour l'innovation, nous avons formé une équipe solide déterminée à faire de Ma Micro la référence dans le domaine des applications de découverte de microbrasseries en Amérique du Nord.",
+      "img": "../assets/images/singleProjet/Ma-Micro/design-mamicro.png"
+    },
+
+    "iconographie": {
+      "titre2": "<span>UX/UI</span> et technologie avancée",
+      "text": "Nos efforts se sont concentrés sur une refonte complète de l'interface utilisateur et de l'expérience utilisateur de Ma Micro. Cette mise à jour comprend une amélioration de l'image de marque et une optimisation des interfaces pour assurer une navigation fluide et intuitive tout en y intégrant les dernières technologies fonctionnellement supérieures.",
+      "img": "../assets/images/singleProjet/Ma-Micro/ico-nav.png"
+    },
+
+    "img-wrap": "../assets/images/singleProjet/Ma-Micro/wrapper.png"
+  },
+
+  {
+    "id": 3,
+    "prototype": false,
+    "classT": "daz",
+    "title": "doorDazzle",
+    "experience": {
+      "titre1": "DoorDazzle",
+      "titre3": "Découvrez les maisons avant les autres.",
+      "text": "Door Dazzle est l'application d'exception qui dévoile les propriétés avant même qu'elles ne soient mises sur le marché.",
+      "img": "../assets/images/singleProjet/Dore-Dazzle/generique-01.png"
+    },
+
+    "production": {
+      "titre2": "DoorDazzle : </br><span style='color: var(--primary);'>L'application immobilière exclusive</span>",
+      "text": "Grâce à ses alertes personnalisées, Door Dazzle vous permet de saisir les meilleures opportunités immobilières dès qu'elles apparaissent, vous donnant ainsi un avantage significatif sur le marché.",
+      "img": "../assets/images/singleProjet/Dore-Dazzle/generique-02.png"
+    },
+
+    "processus": {
+      "titre2": "Un support client <br><span style='color: var(--primary);'>réactif et disponible</span>",
+      "text": "Disponible en version mobile et web, elle est accessible partout et à tout moment. Notre équipe a développé Door Dazzle pour offrir une avance stratégique à tous les acheteurs et professionnels de l'immobilier en Amérique du Nord.",
+      "img": "../assets/images/singleProjet/Dore-Dazzle/generique-03.png"
+    }
+  },
+
+  {
+    "id": 4,
+    "prototype": false,
+    "classT": "pst",
+    "title": "pestControl",
+    "experience": {
+      "titre1": "Pest Control",
+      "titre3": "Révolutionnez la gestion des nuisibles grâce a l'IA.",
+      "text": "Pest Control est une application mobile qui révolutionne la gestion des nuisibles en proposant un service client intégré pour des solutions efficaces et respectueuses de l'environnement, assurant ainsi une tranquillité d'esprit totale.",
+      "img": "../assets/images/singleProjet/Pest-Controle/generique-01.png"
+    },
+
+    "production": {
+      "titre2": "Service client intégré pour </br><span style='color: var(--primary);'>Pest Control</span>",
+      "text": "Avec l'intelligence artificielle, Pest Control permet d'identifier le nuisible, d'évaluer son degré de dangerosité, et de vous mettre en relation avec un prestataire de votre région.",
+      "img": "../assets/images/singleProjet/Pest-Controle/generique-02.png"
+    },
+
+    "processus": {
+      "titre2": "Des mises à jour <br><span style='color: var(--primary);'>régulières et fiables</span>",
+      "text": "Vous pouvez même acheter des produits adaptés via une boutique en ligne disponible 24/7.",
+      "img": "../assets/images/singleProjet/Pest-Controle/generique-03.png"
+    }
+  },
+
+  {
+    "id": 5,
+    "prototype": false,
+    "classT": "col",
+    "title": "colivex",
+    "experience": {
+      "titre1": "Transport Colivex",
+      "titre3": "Rapidité et Sécurité en Livraison.",
+      "text": "Transport Colivex redéfinit la livraison avec son service express qui assure un transfert rapide et sécurisé de vos colis. Adapté à tous types de besoins, que ce soit pour des entreprises ou des particuliers clients.",
+      "img": "../assets/images/singleProjet/Colivex/generique-01.png"
+    },
+
+    "production": {
+      "titre2": "Colivex : </br><span style='color: var(--primary);'>transfert sécurisé de colis</span>",
+      "text": "Colivex révolutionne la livraison de colis en mettant l'accent sur  la sécurité à toutes les étapes. Cette application garantit un transfert  fiable et sécurisé grâce à des technologies avancées, offrant une  expérience sans souci pour vos expéditions.",
+      "img": "../assets/images/singleProjet/Colivex/generique-02.png"
+    },
+
+    "processus": {
+      "titre2": "Un accès facile <br><span style='color: var(--primary);'>à toutes vos informations</span>",
+      "text": "Colivex simplifie l'accès aux informations de livraison avec une  interface conviviale. Suivre et gérer vos colis devient facile, avec la  possibilité de surveiller en temps réel, consulter l'historique des  transactions et modifier les détails de livraison simplement.",
+      "img": "../assets/images/singleProjet/Colivex/generique-03.png"
+    }
+  },
+
+  {
+    "id": 6,
+    "prototype": false,
+    "classT": "da",
+    "title": "damac",
+    "experience": {
+      "titre1": "Damac",
+      "titre3": "Gérez efficacement vos biens immobiliers à Dubaï.",
+      "text": "Grâce à l'application Damac, les résidents et propriétaires à Dubaï bénéficient d'une plateforme exclusive pour une gestion efficace de leur propriété, améliorant ainsi leur expérience résidentielle.",
+      "img": "../assets/images/singleProjet/Damac/generique-01.png"
+    },
+
+    "production": {
+      "titre2": "Production d'une solution mobile pour </br><span style='color: var(--primary);'>Damac</span>",
+      "text": "Suivez vos paiements, demandes de maintenance et accédez à des services exclusifs.",
+      "img": "../assets/images/singleProjet/Damac/generique-02.png"
+    },
+
+    "processus": {
+      "titre2": "Un design <br><span style='color: var(--primary);'>moderne et épuré</span>",
+      "text": "Disponible en version mobile et web. Notre équipe à Damac pour optimiser la gestion immobilière à Dubaï.",
+      "img": "../assets/images/singleProjet/Damac/generique-03.png"
+    }
+  },
+
+  {
+    "id": 7,
+    "prototype": false,
+    "classT": "wc",
+    "title": "weChalet",
+    "experience": {
+      "titre1": "We Chalet",
+      "titre3": "Louer des chalets à des endroits formidables.",
+      "text": "We Chalet offre une application unique en proposant des hébergements à la fois 100% québécois et à des tarifs plus abordables que les alternatives.",
+      "img": "../assets/images/singleProjet/weChalet/generique-01.png"
+    },
+
+    "production": {
+      "titre2": "We Chalet : </br><span style='color: var(--primary);'>Création d'une plateforme vacances</span>",
+      "text": "Profitez d'un large choix de chalets pittoresques et confortables pour vos vacances, avec des options de réservation facile et des recommandation personnalisées.",
+      "img": "../assets/images/singleProjet/weChalet/generique-02.png"
+    },
+
+    "processus": {
+      "titre2": "Un processus de connexion <br><span style='color: var(--primary);'>rapide et sûr</span>",
+      "text": "Disponible en version mobile et web. Chez Win Technologie, nous facilitons l'accès à des hébergements québécois authentiques avec We Chalet.",
+      "img": "../assets/images/singleProjet/weChalet/generique-03.png"
+    }
+  },
+
+  {
+    "id": 8,
+    "prototype": false,
+    "classT": "ra",
+    "title": "renoAssistance",
+    "experience": {
+      "titre1": "Réno Assistance",
+      "titre3": "Simplifiez la recherche d'entrepreneurs.",
+      "text": "Obtenez des devis gratuits en quelques minutes et choisissez l'entrepreneur idéal pour concrétiser vos projets en toute tranquillité.",
+      "img": "../assets/images/singleProjet/RenoAssistance/generique-01.png"
+    },
+
+    "production": {
+      "titre2": "Production d'une app pour vos projets </br><span style='color: var(--primary);'>Réno Assistance</span>",
+      "text": "En plus, l'application vous offre des conseils et des évaluations d'experts pour garantir la réussite de vos travaux.",
+      "img": "../assets/images/singleProjet/RenoAssistance/generique-02.png"
+    },
+
+    "processus": {
+      "titre2": "Une intégration <br><span style='color: var(--primary);'>fluide avec vos outils</span>",
+      "text": "Disponible en version mobile et web pour une accessibilité optimale. Chez Win Technologie, nous simplifions vos rénovations avec Réno Assistance.",
+      "img": "../assets/images/singleProjet/RenoAssistance/generique-03.png"
+    }
+  },
+
+  {
+    "id": 9,
+    "prototype": false,
+    "classT": "tz",
+    "title": "tzCapitalNationale",
+    "experience": {
+      "titre1": "TZ",
+      "titre3": "La première application mondiale de raccompagnement.",
+      "text": "Tolérance Zéro est la seule application mobile dans l'industrie du raccompagnement qui propose une solution sûre, économique et unique pour rentrer chez soi.",
+      "img": "../assets/images/singleProjet/TZcapitaleNationale/generique-01.png"
+    },
+
+    "production": {
+      "titre2": "Création de TZ</br><span style='color: var(--primary);'>l'application sûre et économique</span>",
+      "text": "Avec Tolérance Zéro, bénéficiez d'un service de raccompagnement fiable et professionnel, disponible à tout moment pour garantir votre sécurité sur la route.",
+      "img": "../assets/images/singleProjet/TZcapitaleNationale/generique-02.png"
+    },
+
+    "processus": {
+      "titre2": "Des notifications<br><span style='color: var(--primary);'>claires et pertinentes</span>",
+      "text": "Notre firme est fière d'encourager la sécurité des utilisateurs avec l'application Tolérance Zéro.",
+      "img": "../assets/images/singleProjet/TZcapitaleNationale/generique-03.png"
+    }
+  },
+
+  {
+    "id": 10,
+    "prototype": false,
+    "classT": "easy",
+    "title": "easymove",
+    "experience": {
+      "titre1": "Easy Move",
+      "titre3": "Le transport réinventé.",
+      "text": "Avec lapplication Easy Move, accédez en quelques secondes à un ensemble doffres de transport économiques et adaptées à vos besoins partout au Canada grâce à une technologie unique de mise en relation.",
+      "img": "../assets/images/singleProjet/EasyMove/generique-01.png"
+    },
+
+    "production": {
+      "titre2": "Innovation technologique avec</br><span style='color: var(--primary);'>Easy Move</span>",
+      "text": "Disponible en version mobile et web, elle vous accompagne partout.",
+      "img": "../assets/images/singleProjet/EasyMove/generique-02.png"
+    },
+
+    "processus": {
+      "titre2": "Une gestion simplifiée<br><span style='color: var(--primary);'>de vos documents</span>",
+      "text": "Chez Win Technologie, nous sommes fiers de réinventer le transport pour le rendre plus accessible avec Easy Move.",
+      "img": "../assets/images/singleProjet/EasyMove/generique-03.png"
+    }
+  },
+
+  {
+    "id": 11,
+    "prototype": false,
+    "classT": "cli",
+    "title": "cliniQ",
+    "experience": {
+      "titre1": "CliniQ",
+      "titre3": "Trouvez le bon spécialiste grâce à lIA",
+      "text": "CliniQ utilise lintelligence artificielle pour identifier le bon spécialiste en fonction de vos symptômes, facilitant ainsi votre accès à des soins de qualité.",
+      "img": "../assets/images/singleProjet/Cliniq/generique-01.png"
+    },
+
+    "production": {
+      "titre2": "Création de CliniQ,</br><span style='color: var(--primary);'>lapplication de santé intelligente</span>",
+      "text": "Lapplication vous guide à travers un questionnaire détaillé pour une évaluation précise, vous dirigeant ensuite vers le professionnel le plus adapté à votre situation. Disponible en version mobile et web.",
+      "img": "../assets/images/singleProjet/Cliniq/generique-02.png"
+    },
+
+    "processus": {
+      "titre2": "Une sécurité renforcée<br><span style='color: var(--primary);'>pour vos données</span>",
+      "text": "Win Technologie, nous facilite votre accès à des prestataires médicaux sur toutes les plateformes avec CliniQ.",
+      "img": "../assets/images/singleProjet/Cliniq/generique-03.png"
+    }
+  },
+
+  {
+    "id": 12,
+    "prototype": false,
+    "classT": "f",
+    "title": "fraction",
+    "experience": {
+      "titre1": "Fraction",
+      "titre3": "Investissez dans limmobilier fractionné",
+      "text": "Fraction permet dinvestir dans limmobilier à partir de 100$, enlevant ainsi les barrières à lentrée et les contraintes traditionnelles de linvestissement immobilier.",
+      "img": "../assets/images/singleProjet/Fraction/generique-01.png"
+    },
+
+    "production": {
+      "titre2": "Fraction:</br><span style='color: var(--primary);'>lapplication immobilier accessible</span>",
+      "text": "Lapplication offre une transparence totale sur les opportunités dinvestissement, permettant à chacun de diversifier son portefeuille immobilier de manière simple et sécurisée.",
+      "img": "../assets/images/singleProjet/Fraction/generique-02.png"
+    },
+
+    "processus": {
+      "titre2": "Des paramètres personnalisables à souhait</span>",
+      "text": "Disponible en version mobile et web. Chez Win Technologie, nous démocratisons linvestissement immobilier avec Fraction.",
+      "img": "../assets/images/singleProjet/Fraction/generique-03.png"
+    }
+  },
+
+  {
+    "id": 13,
+    "prototype": false,
+    "classT": "d",
+    "title": "dentalPro",
+    "experience": {
+      "titre1": "DentalPro 24/7",
+      "titre3": "Trouvez un dentiste à toute heure",
+      "text": "Dental Pro 24/7 est une application qui vous permet de trouver un dentiste peu importe lheure du jour ou de la nuit, assurant un accès aux soins dentaires en continu.",
+      "img": "../assets/images/singleProjet/DentalPro/generique-01.png"
+    },
+
+    "production": {
+      "titre2": "DentalPro 24/7:</br><span style='color: var(--primary);'>soins dentaire en tout temps</span>",
+      "text": "Avec une base de données exhaustive et des avis patients, Dental Pro 24/7 garantit une prise en charge rapide et de qualité en cas durgence dentaire.",
+      "img": "../assets/images/singleProjet/DentalPro/generique-02.png"
+    },
+
+    "processus": {
+      "titre2": "Un suivi détaillé de votre dossier</span>",
+      "text": "Disponible en version mobile et web pour une accessibilité continue. Notre firme sassure que vous trouviez un dentiste à toute heure avec Dental Pro 24/7.",
+      "img": "../assets/images/singleProjet/DentalPro/generique-03.png"
+    }
+  },
+
+  {
+    "id": 14,
+    "prototype": false,
+    "classT": "db",
+    "title": "laDb",
+    "experience": {
+      "titre1": "La DB",
+      "titre3": "Technologie de gestion dapplication efficace",
+      "text": "Avec La DB, vous disposez d'un outil puissant pour gérer efficacement toutes les données essentielles à votre application, de manière intuitive et sécurisée. ",
+      "img": "../assets/images/singleProjet/LaDB/generique-01.png"
+    },
+
+    "production": {
+      "titre2": "Création de La DB,</br><span style='color: var(--primary);'>loutil pour gestion de données intuitive</span>",
+      "text": "Grâce à notre expertise et notre innovation, La DB offre une gestion de base de données fluide et transparente.",
+      "img": "../assets/images/singleProjet/LaDB/generique-02.png"
+    },
+
+    "processus": {
+      "titre2": "Une gestion simplifiée de vos documents</span>",
+      "text": "La DB vous permet de vous concentrer sur la croissance et le succès de votre application.",
+      "img": "../assets/images/singleProjet/LaDB/generique-03.png"
+    }
+  }
+]

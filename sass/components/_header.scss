@@ -1,0 +1,192 @@
+// Default styles for larger screens
+.header {
+  
+  color: var(--text);
+  padding: 19px 40px 20px 40px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  margin-top: 3px;
+  background-color: #fff; // White background
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .navheader {
+    width: 100%;
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 24px;
+
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 24px;
+        list-style: none;
+
+        li :hover {
+          color: var(--primary);
+        }
+        li :focus {
+          color: var(--primary);
+        }
+        li.active {
+          color: gray;
+        }
+      }
+
+      .active {
+        color: var(--primary);
+      }
+
+      .btn {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .rdv {
+        border: 1.5px solid var(--primary);
+        border-radius: 8px;
+        background: var(--primary);
+        color: #fff;
+        padding: 12px 45px;
+      }
+
+      .langue {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+          height: 18px;
+          width: 18px;
+        }
+
+        #en {
+          padding-left: 2px;
+          padding-top: 2px;
+        }
+      }
+    }
+
+    .logo-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      height: 150px;
+      width: auto;
+      transition: all 0.3s ease;
+    }
+
+    .menu-hamburger {
+      display: none;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      position: absolute;
+      right: 0; // Always on the right
+    }
+  }
+}
+
+// Styles for sticky header
+#header-container.sticky {
+  position: fixed; /* Fixes the header to the top */
+  top: 0; /* Stick to the top of the viewport */
+  left: 0; /* Ensure it's aligned with the left edge */
+  z-index: 1000; /* Stays above other content */
+  width: 100%; /* Full width of the viewport */
+  background-color: #fff; /* Ensure background is white */
+  // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+
+  .logo-container {
+    height: 120px;
+  }
+
+  .menu-hamburger {
+    right: 0; /* Always on the right */
+  }
+}
+
+// Mobile styles
+@media (max-width: 768px) {
+  .header {
+    padding: 10px; // Adjust padding for mobile view
+    
+
+    .navheader {
+      .menu-hamburger {
+        display: block; // Show hamburger button
+        transform: scale(1.5)
+
+      }
+
+      nav {
+        // border: solid red 1px;
+        display: none;
+        z-index: 1000;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0; // Take full width
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: max-height 0.3s ease;
+        overflow: hidden;
+        margin-top: 0.5rem;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0  2px 4px 2px rgba(0, 0, 0, 0.1);
+
+        &.open {
+          max-height: 400px; // Adjust if necessary
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          padding: 20px 0;
+          list-style: none;
+          margin: 0;
+
+          li {
+            padding: 10px 0;
+            text-align: center;
+
+            a {
+              color: var(--text);
+              text-decoration: none;
+              transition: color 0.3s;
+            }
+
+            a:hover {
+              color: var(--primary);
+            }
+          }
+        }
+
+        .btn {
+          margin-top: 20px;
+          flex-direction: column;
+        }
+      }
+    }
+
+    .logo-container {
+      height: 100px; // Adjust logo height for mobile view
+    }
+  }
+}

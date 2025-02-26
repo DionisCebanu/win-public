@@ -1,0 +1,225 @@
+footer.fotter-version-x {
+  background-color: #242424;
+  padding: 0.8rem;
+
+  .partie1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 26px;
+    background-color: #1a1a1a;
+    border-radius: 5px;
+
+    .left-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1rem;
+      // width: 100%;
+      h3,
+      p {
+        color: white;
+        margin: 0;
+      }
+
+      form {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 342px;
+        margin-top: 20px;
+        input {
+          flex: 1;
+          height: 44px;
+          background-color: #f4f4f4;
+          border-radius: 10px 0 0 10px;
+          border: none;
+          padding-left: 10px;
+        }
+
+        button {
+          cursor: pointer;
+          background-color: var(--primary);
+          border: none;
+          border-radius: 0 10px 10px 0;
+          height: 44px;
+          width: 44px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+
+      .imgIcone {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        a {
+          margin: 0 10px; // Center spacing
+
+          img {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+        }
+      }
+    }
+
+    .middle-footer,
+    .right-footer {
+      text-align: center;
+      margin-top: 20px;
+
+      .singlePro {
+          font-weight: 700;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        color: white;
+        padding: 9px;
+
+        a {
+          color: inherit;
+          text-decoration: none;
+          span {
+            color: var(--primary);
+            font-weight: 700;
+          }
+        }
+
+        &:hover a {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+
+  .partie1-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 10%;
+    width: 100%;
+
+    h3 {
+      color: #fff;
+    }
+    ul {
+      li {
+        color: #fff;
+        span {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+
+  .cpr {
+    background-color: #1a1a1a;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px 0;
+
+    p {
+      color: white;
+      margin: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .partie1 {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 40px 26px;
+
+      .left-footer {
+        align-items: flex-start;
+        form {
+          flex-direction: row;
+          width: auto;
+          max-width: none;
+
+          input {
+            width: 299px;
+          }
+
+          button {
+            width: auto;
+            padding: 12px 30px;
+          }
+        }
+
+        .imgIcone {
+          margin-top: 15px;
+          justify-content: flex-start; // Adjust alignment
+
+          a {
+            margin: 0 10px; // Adjust spacing for larger screens
+
+            img {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+
+      .middle-footer,
+      .right-footer {
+        text-align: left;
+        margin-top: 0;
+      }
+    }
+
+    .partie1-1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 10%;
+      width: 100%;
+
+      div {
+        flex: 1;
+        padding: 0 10px;
+
+        h3 {
+          color: white;
+          margin-bottom: 10px;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          li {
+            color: white;
+            padding-bottom: 6px;
+          }
+
+          li:hover {
+            color: var(--primary);
+          }
+        }
+      }
+    }
+  }
+}

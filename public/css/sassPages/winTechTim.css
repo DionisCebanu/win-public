@@ -1,0 +1,286 @@
+@media (min-width: 769px) {
+  * .frameTim1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  * .leftPartTim,
+  * .rightPartTim {
+    width: 50%;
+    height: 100vh;
+  }
+  * .leftPartTim {
+    display: flex;
+    flex-direction: column;
+    padding: 180px 40px 80px 40px;
+    position: relative;
+    border: none;
+    border-radius: 0 40px 40px 0;
+    background: linear-gradient(180deg, #ffffff 0%, #f1f1f1 100%);
+  }
+  * .leftPartTim h1 {
+    color: var(--primary);
+    font-family: "Visby CF";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 130%;
+  }
+  * .leftPartTim h3 {
+    font-family: "Visby CF";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 37px;
+  }
+  * .leftPartTim p {
+    font-family: "Visby CF";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+    color: #383330;
+  }
+  * .rightPartTim {
+    background-image: url("../../assets/images/winTechTim/back_grdTim.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  * .rightPartTim img {
+    width: 30%;
+    position: absolute;
+    z-index: 2;
+  }
+  * .rightPartTim video {
+    width: 28%;
+    position: absolute;
+    z-index: 3;
+    border-radius: 20px;
+  }
+  * .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * .frameTim2-3-4-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 1080px;
+    margin-top: 59px;
+    height: 743px;
+    padding-top: 40px;
+  }
+  * .frameTim2-3-4-5 .divImg {
+    margin-top: -1.7px;
+  }
+  * .frameTim2-3-4-5 .divImg img {
+    text-align: center;
+    align-items: center;
+    margin-left: 3px;
+  }
+  * .txt1 {
+    background: linear-gradient(0deg, #fdfdfd 0%, #f9f9f9 100%);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px 10px 0px 0px;
+    width: 1080px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 14px;
+    margin-bottom: -2px;
+  }
+  * .txt1 p {
+    text-align: justify;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: 0;
+  }
+  * .txt1 h1 {
+    text-align: center;
+  }
+  * .divImgFrame3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    width: 1080px;
+    align-items: center;
+    margin-left: 3px;
+    margin-top: -1px;
+  }
+  * #btn-projetTim {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: right;
+    margin: 40px 0 0 40px;
+  }
+  * #btn-projetTim button {
+    padding: 10px 45px;
+    border: none;
+    background-color: var(--primary);
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 152px;
+  }
+}
+
+@media (max-width: 769px) {
+  * .frameTim1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  * .leftPartTim,
+  * .rightPartTim {
+    justify-content: center;
+    width: 100vw;
+    height: 69vh;
+  }
+  * .leftPartTim {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 19px;
+    padding-right: 10px;
+    position: relative;
+    height: 400px;
+    background: linear-gradient(180deg, #ffffff 0%, #f1f1f1 100%);
+  }
+  * .leftPartTim h1 {
+    color: var(--primary);
+    font-family: "Visby CF";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 130%;
+  }
+  * .leftPartTim h3 {
+    font-family: "Visby CF";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 37px;
+  }
+  * .leftPartTim p {
+    font-family: "Visby CF";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+    color: #383330;
+  }
+  * .rightPartTim {
+    background-image: url("../../assets/images/winTechTim/back_grdTim.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    order: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  * .rightPartTim img {
+    width: 30%;
+    position: absolute;
+    z-index: 2;
+  }
+  * .rightPartTim video {
+    width: 28%;
+    position: absolute;
+    z-index: 3;
+    border-radius: 20px;
+  }
+  * .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 14px;
+    margin-right: 14px;
+  }
+  * .container .frameTim2-3-4-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 39px;
+    padding-top: 40px;
+  }
+  * .container .frameTim2-3-4-5 .divImg {
+    margin-top: -1.7px;
+  }
+  * .container .frameTim2-3-4-5 .divImg img {
+    text-align: center;
+    align-items: center;
+  }
+  * .container .txt1 {
+    background: linear-gradient(0deg, #fdfdfd 0%, #f9f9f9 100%);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px 10px 0px 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 14px;
+    margin-bottom: -2px;
+  }
+  * .container .txt1 p {
+    text-align: justify;
+    margin: 0;
+    padding: 20px;
+  }
+  * .container .txt1 h1 {
+    text-align: center;
+  }
+  * .container .divImgFrame3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: -1px;
+  }
+  * #btn-projetTim {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  * #btn-projetTim button {
+    padding: 10px 119px;
+    gap: 5px;
+    color: #ffffff;
+    height: 46px;
+    background-color: var(--primary);
+    border-radius: 8px;
+    border: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+/*# sourceMappingURL=winTechTim.css.map */

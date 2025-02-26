@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rendez-Vous2</title>
+    <link rel="stylesheet" href="/fonts/cssFont.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/icons/favicon.ico"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/sassPages/rendezVous5.css" />
+  </head>
+
+  <body data-page-id="rendezVous5">
+    <section class="rdv-barre">
+      <div class="navigation">
+        <button id="retour">
+          <img src="/assets/images/Rendez-vous/retour.svg" alt="" />
+        </button>
+        <div class="langue">
+          <a id="vector" href=""
+            ><img src="/assets/images/header/Vector.png" alt=""
+          /></a>
+          <a id="en" href="">En</a>
+        </div>
+      </div>
+      <div class="bar-progress">
+        <div class="cercle" id="bgSelector">
+          <img src="/assets/images/Rendez-vous/Check.svg" alt="" />
+        </div>
+        <div class="line" id="bgSelector"></div>
+        <div class="cercle" id="bgSelector">
+          <img src="/assets/images/Rendez-vous/Check.svg" alt="" />
+        </div>
+        <div class="line" id="bgSelector"></div>
+        <div class="cercle" id="bgSelector">
+          <img src="/assets/images/Rendez-vous/Check.svg" alt="" />
+        </div>
+        <div class="line" id="bgSelector"></div>
+        <div class="cercle" id="bgSelector">
+          <img src="/assets/images/Rendez-vous/Check.svg" alt="" />
+        </div>
+        <div class="line" id="bgSelector"></div>
+        <div class="cercle" id="bgSelector">5</div>
+      </div>
+      <div class="content">
+        <div>
+          <h3 class="rdvs1">Votre rendez-vous</h3>
+        </div>
+        <div>
+          <p class="rdvs2" id="rdvDetails">10h00 Mer, 17 Juillet 2024</p>
+        </div>
+        <div class="question">
+          <label class="rdvs3" for="questions">Vous avez des questions?</label>
+          <textarea id="questions"></textarea>
+        </div>
+      </div>
+      <div class="btn">
+        <a href="/rendez-vous/date"
+          ><button class="rdvs4" id="btn1">Retour</button></a
+        >
+        <!-- <a href="/rendez-vous/soumission-info"><button class="rdvs5" id="btn2" onclick="submitForm()">
+            Suivant
+          </button></a> -->
+          <button class="rdvs5" id="btn2" onclick="submitForm()">Suivant</button>
+      </div>
+    </section>
+    <div class="popup-overlay" id="popup">
+      <div class="popup-content">
+        <p class="rdvs6">Votre progrès sera perdu. Êtes-vous certain?</p>
+        <div class="selBtn">
+          <button class="rdvs7" id="oui">Oui</button>
+          <button class="rdvs8" id="non">Non</button>
+        </div>
+    </div>
+    
+    <div id="errorMessage"></div>
+</body>
+<script src="/js/popup.js"></script>
+<script src="/js/traduction/langue.js"></script>
+<script src="/js/traduction/dictionnaire.js"></script>
+
+<script>
+    function  submitForm() {
+      let question = document.getElementById('questions').value
+      localStorage.setItem('questions', question)
+      window.location.href= '/rendez-vous/soumission-info'
+  }
+  
+</script>
+
+<script>
+  //partie affichage de la date de rendez vous
+  document.addEventListener("DOMContentLoaded", function () {
+    // Récupérer les informations depuis le local storage
+    const date = localStorage.getItem("date");
+    const timeSlot = localStorage.getItem("timeSlot");
+
+    // Vérifier que les informations sont disponibles
+    if (date && timeSlot) {
+      // Afficher les informations dans l'élément rdvDetails
+      document.getElementById(
+        "rdvDetails"
+      ).textContent = `${timeSlot} ${date}`;
+    } else {
+      document.getElementById("rdvDetails").textContent =
+        "Informations de rendez-vous non disponibles.";
+    }
+  });
+</script>
+
+</html>

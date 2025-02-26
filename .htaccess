@@ -1,0 +1,15 @@
+RewriteEngine On
+
+# Serve index.html from pages directory
+DirectoryIndex /pages/index.html
+
+# Handle 403 Forbidden errors
+ErrorDocument 403 /pages/index.html
+
+
+# Allow existing files and directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirect all other routes to Node.js
+RewriteRule ^(.*)$ http://localhost:8002/$1 [P,L]

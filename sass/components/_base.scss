@@ -1,0 +1,70 @@
+body {
+  width: 100%;
+
+  // Optimised by Elhadi
+  overflow-x: hidden;
+  margin: 0;
+
+  font-family: "Visby CF";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  color: var(--txt-black);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#selecteur {
+  color: var();
+}
+
+// Optimised by Elhadi
+// CTA button
+$primay: #fc6136;
+
+.ctabtn {
+  cursor: pointer !important;
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  overflow: hidden !important;
+  transition: background-color 0.3s, color 0.3s;
+  padding: .9rem 1.8rem !important;
+  border-radius: 0.3rem !important;
+  background-color: var(--primary) !important;
+  color: white !important;
+  text-align: center !important;
+}
+
+.section1 .ctabtn, .section2  .ctabtn, .sect3-0 .ctabtn {
+  // margin-top: 2rem !important;
+}
+
+.ctabtn:hover {
+  background-color: darken($primay, 10%) !important;
+  // padding-bottom: 5px !important;
+}
+
+
+

@@ -1,0 +1,174 @@
+.questions p {
+  margin-top: 80px;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+.questions p span {
+  color: var(--primary);
+}
+.questions .forms-question {
+  display: flex;
+  justify-content: space-around;
+  width: 943px;
+  height: auto;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 63px;
+}
+.questions .forms-question #lblQuestion {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  border: 0;
+}
+.questions .forms-question .question-gauche {
+  width: 398px;
+  border: 0;
+}
+.questions .forms-question .question-gauche .inputQuestion1,
+.questions .forms-question .question-gauche .inputQuestion2,
+.questions .forms-question .question-gauche .inputQuestion3 {
+  width: 398px;
+  padding: 11px 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  background-color: #f4f4f4;
+  border: 0;
+}
+.questions .forms-question .question-gauche .lblInput {
+  margin-top: 17px;
+}
+.questions .forms-question .question-droit {
+  width: 398px;
+  border: 0;
+}
+.questions .forms-question .question-droit #txtArea {
+  width: 398px;
+  height: 203px;
+  background-color: #f4f4f4;
+  border: 0;
+}
+.questions .btn {
+  text-align: center;
+}
+.questions .btn button {
+  width: 171px;
+  height: 46px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: var(--primary);
+  color: white;
+  border: 0;
+}
+.questions .cadre-question {
+  padding-bottom: 40px;
+  width: 1000px;
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  margin: auto;
+}
+.questions .error {
+  font-size: 12px;
+  color: var(--primary);
+}
+
+.information {
+  margin-bottom: 200px;
+  margin-top: 200px;
+}
+.information p {
+  text-align: center;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.information p span {
+  color: var(--primary);
+}
+.information .information-contact {
+  display: flex;
+  justify-content: space-around;
+}
+.information .information-contact .grid-contact {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 271px);
+  column-gap: 110px;
+}
+.information .information-contact .contact {
+  padding: 35px 25px;
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  background: 0deg, #fdfdfd 0%, #f9f9f9 100%;
+}
+.information .information-contact .contact #p1 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left;
+}
+.information .information-contact .contact #p2 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left;
+  margin-top: 45px;
+}
+.information .information-contact .contact #p2 span {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--primary);
+}
+.information .information-contact .contact #p3 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left;
+  margin-top: 45px;
+}
+.information .information-reseau-sociaux {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 78px;
+}
+.information .information-reseau-sociaux .grid-reseau {
+  display: grid;
+  grid-template-columns: repeat(3, 221px);
+  column-gap: 138px;
+  row-gap: 75px;
+}
+.information .information-reseau-sociaux .imgs {
+  width: 221px;
+  text-align: center;
+}
+.information .information-reseau-sociaux .imgs p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.information .information-reseau-sociaux .imgs p span {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--primary);
+}
+.information .information-reseau-sociaux #img {
+  width: 177px;
+}
+
+/*# sourceMappingURL=contact-.css.map */

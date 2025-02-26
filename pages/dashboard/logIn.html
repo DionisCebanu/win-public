@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/dashboard/logIn.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico" />
+    <link rel="stylesheet" href="/fonts/cssFont.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <title>Win technologie | Connexion</title>
+  </head>
+  <body data-page-id="logIn">
+    <!-- Header -->
+    <div id="header-container"></div>
+
+    <div class="container">
+      <div class="textSection">
+        <p class="title">
+          Bienvenue <br />
+          chez Win <br />
+          Technologie!
+        </p>
+      </div>
+      <div class="loginSectionContainer">
+        <form id="loginForm">
+          <label class="label">Connexion</label>
+          <div class="inputContainer">
+            <input type="text" placeholder="Courriel" id="email" />
+            <input type="password" placeholder="Mot de passe" id="password" />
+          </div>
+          <p id="error-message" style="color: red; display: none">
+            *Email ou mot de passe incorrect.
+          </p>
+          <div class="btnC">
+            <button type="submit" class="btn">Se connecter</button>
+            <div class="links">
+              <a href="/rendez-vous" class="pdc">Pas de compte ?</a>
+              <a href="#" class="mdpO">Mot de passe oublié</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+  </body>
+  <script src="/js/traduction/dictionnaire.js"></script>
+  <script src="/js/inclureHeaderFooter/inclureHeaderFooter.js"></script>
+  <script src="/js/responsiveHeader.js"></script>
+  <script src="/js/stickyHeader.js"></script>
+  <script>
+    document
+      .getElementById("loginForm")
+      .addEventListener("submit", function (event) {
+        event.preventDefault(); // Empêche le rechargement de la page
+
+        // Récupère les valeurs des champs
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        // Simule la vérification des identifiants (ici, tu peux intégrer une vraie validation)
+        if (email !== "correct@example.com" || password !== "correctpassword") {
+          // Affiche le message d'erreur
+          document.getElementById("error-message").style.display = "block";
+        } else {
+          // Redirige l'utilisateur vers une autre page, par exemple
+          window.location.href = "/dashboard";
+        }
+      });
+  </script>
+</html>
